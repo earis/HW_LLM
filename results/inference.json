@@ -1,0 +1,48 @@
+{
+  "device": "cuda",
+  "model_dir": "checkpoints\\full",
+  "window_size": 384,
+  "stride": 300,
+  "samples": [
+    {
+      "input": "孔子曰学而时习之不亦说乎",
+      "output": "孔子曰：学而时习之，不亦说乎？"
+    },
+    {
+      "input": "今天我们学习自然语言处理这是一个很有趣的方向",
+      "output": "今天我们学习自然语言处理，这是一个很有趣的方向。"
+    }
+  ],
+  "test_metrics": {
+    "samples": 1000.0,
+    "tokens": 88835.0,
+    "accuracy": 0.981336185062194,
+    "macro_f1_non_o": 0.6790532136898458
+  },
+  "benchmark": [
+    {
+      "batch_size": 1,
+      "seconds": 26.87438930000644,
+      "characters": 486170,
+      "characters_per_second": 18090.45759413344
+    },
+    {
+      "batch_size": 4,
+      "seconds": 31.657090299995616,
+      "characters": 486170,
+      "characters_per_second": 15357.381091971909
+    },
+    {
+      "batch_size": 8,
+      "seconds": 32.9222930999822,
+      "characters": 486170,
+      "characters_per_second": 14767.197367557088
+    },
+    {
+      "batch_size": 16,
+      "seconds": 37.3457070000004,
+      "characters": 486170,
+      "characters_per_second": 13018.096029082935
+    }
+  ]
+}

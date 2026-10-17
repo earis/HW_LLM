@@ -1,0 +1,25 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local environments and editor files
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+
+# Raw and generated datasets
+1998-上半年-带音(1).rar
+1998-上半年-带音(1)/
+data/processed/*.jsonl
+
+# Downloaded base model and fine-tuned checkpoints
+models/
+checkpoints/
+
+# Local experiment outputs; keep the small final result if desired
+results/*.json
+!results/inference.json
+!results/benchmark.json
