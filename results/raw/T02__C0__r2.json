@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T02",
+    "title": "鹿柴",
+    "author": "王维",
+    "text": "空山不见人，但闻人语响。返景入深林，复照青苔上。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 3
+  },
+  "condition_id": "C0",
+  "condition_name": "直接翻译",
+  "repeat": 2,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "e9ae5ce428583a7a87175bb85b44a65661a008a0a522edc37fd297c38bf0cc91",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 鹿柴\nAuthor: 王维\nGenre: 五言绝句\nSource:\n空山不见人，但闻人语响。返景入深林，复照青苔上。",
+  "requested_at": "2026-11-04T05:34:07Z",
+  "translation": "**Deer Park**\n\nNo one is seen in the empty hills,  \nonly the sound of human voices.  \nReturning sunlight enters the deep forest  \nand shines once more upon the green moss.",
+  "usage": {
+    "prompt_tokens": 188,
+    "completion_tokens": 705,
+    "total_tokens": 893,
+    "completion_tokens_details": {
+      "reasoning_tokens": 651
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 27.703,
+  "response": {
+    "id": "chatcmpl-6aeac3d20ca62e3c2c1988b0",
+    "object": "chat.completion",
+    "created": 1793770451,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Deer Park**\n\nNo one is seen in the empty hills,  \nonly the sound of human voices.  \nReturning sunlight enters the deep forest  \nand shines once more upon the green moss.",
+          "reasoning_content": "I need translate Wang Wei's 鹿柴 (Deer Park / Deer Enclosure) literary English preserving complete content and structure naturally, only English translation. Should decide title? User says return only English translation. Could include title? User wants poem translation. Typically:\nDeer Park\n\nNo one is seen in the empty hills,\nOnly the sound of voices is heard.\nReturning sunlight enters the deep forest,\nAnd shines again on the green moss.\n\nShould have nuance 返景 = returning sunlight / slanting sunlight? 景 read yǐng, sunlight. 返景 = reflected rays of setting sun, returning sunlight. \"The empty mountain: no one in sight, / yet I hear the echo of human speech. / Returning light enters the deep woods / and shines again upon the green moss.\" This is four lines. Title Deer Park (鹿柴 zhai4, enclosure/fence, often Deer Park). I could output title plus author? \"Deer Park\" and quatrain. \"Empty hills, no one in sight— / only the sound of voices. / Returning sunlight enters the deep woods, / shining once more on the green moss.\" Complete. \"But\" preserves 但. Genre structure four lines five syllables not possible. Literary adult unfamiliar. Title \"Deer Park\" good. Perhaps \"Deer Enclosure\" more literal but standard \"Deer Park\". Source often translated:\nEmpty hills, no one in sight,\nonly the sound of someone talking;\nlate sunlight enters the deep wood,\nshining over the green moss again. (Gary Snyder)\nI need original independent.\n\nOnly English translation means title perhaps \"Deer Park\" is translation. Could include no author. Ensure not copy too much? It's public domain anyway. Should have \"echoes of voices\" 响 = sound, echo. \"But I hear voices sounding\" or \"only the sound of human voices.\" Returning light = \"A shaft of returning sunlight\" but shaft not explicit. \"The slanting sunlight\" interpret. Better:\nDeer Park\n\nIn the empty hills, no one is seen;\nonly the sound of human voices.\nReturning sunlight enters the deep woods\nand shines once more upon the green moss.\n\nThis is polished and faithful. \"Empty mountain\" singular? 空山 = empty mountains/hills. \"In the empty mountain, no one in sight\" unnatural. \"No one is seen on the empty mountain;\" works. \"Deep forest\" not woods? \"Deep forest\" okay. I want literary. \n\"Deer Park\n\nNo one is seen in the empty hills,\nonly the sound of human voices.\nThe returning light enters the deep forest\nand shines once more on the green moss.\"\nBut second line missing verb grammar? Fine.\nCould use \"yet\" for 但, \"but\". \"Returning sunlight\" weird but accepted and alludes late light. \"Sunlight, turning back, enters the deep woods\" literal but weird. \"Late sunlight slants into the deep woods\" adds slants. \"The setting sun's returning light / ...\" too many lines.\nKimi's response is likely a simple four-line. Include title and quatrain. No explanation."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 188,
+      "completion_tokens": 705,
+      "total_tokens": 893,
+      "completion_tokens_details": {
+        "reasoning_tokens": 651
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 27.703
+  },
+  "status": "ok"
+}

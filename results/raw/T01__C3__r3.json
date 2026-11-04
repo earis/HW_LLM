@@ -1,0 +1,65 @@
+{
+  "poem": {
+    "id": "T01",
+    "title": "静夜思",
+    "author": "李白",
+    "text": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 1
+  },
+  "condition_id": "C3",
+  "condition_name": "任务标准加边界示例",
+  "repeat": 3,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "551e98d12810971f91fb3f2d51586c2a218c241b90e27a1162fcf2f02235d2d3",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 静夜思\nAuthor: 李白\nGenre: 五言绝句\nSource:\n床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "requested_at": "2026-11-04T05:29:33Z",
+  "translation": "**Thoughts on a Quiet Night**\n\nBright moonlight before my bed—\nI wonder if it is frost upon the ground.\nI raise my head to gaze at the bright moon,\nThen lower it, thinking of home.",
+  "usage": {
+    "prompt_tokens": 289,
+    "completion_tokens": 619,
+    "total_tokens": 908,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 559
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 15.977,
+  "response": {
+    "id": "chatcmpl-6aeac2c07d1b7f2bbf9902f3",
+    "object": "chat.completion",
+    "created": 1793770176,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Thoughts on a Quiet Night**\n\nBright moonlight before my bed—\nI wonder if it is frost upon the ground.\nI raise my head to gaze at the bright moon,\nThen lower it, thinking of home.",
+          "reasoning_content": "I need respond with only the English translation, title likely Thoughts on a Quiet Night / Quiet Night Thoughts by Li Bai? User asks translate poem, preserve complete content and structure naturally. I'll return only the translation. Famous 静夜思. Should have accurate nuances: 床前明月光 Before my bed, the bright moonlight (or moonlight bright). 疑是地上霜 I wonder if it's frost on the ground. 举头望明月 I raise my head to gaze at the bright moon, 低头思故乡 lower it, thinking of home/my native land. Could title \"Thoughts on a Quiet Night\" and four lines. No author necessary? Return only translation. Literary. Common:\nBefore my bed, the moonlight gleams;\nI wonder—is it frost upon the ground?\nI lift my head and gaze at the bright moon,\nThen lower it, and think of home.\n\nShould have no unsupported additions. \"gleams\" okay. Rhyme optional. \"bright moonlight\" repetition bright moon. Preserve structure. \"Before my bed, the bright moonlight— / I wonder if it's frost upon the ground. / I raise my head to gaze at the bright moon, / then lower it, longing for home.\" 思故乡 = think of home/native land. \"longing for home\" adds emotion but implied. Better \"think of home\" accurate. Title \"Thoughts on a Quiet Night\". Only English translation. Should I include title? Yes title translated. Could say:\nQuiet Night Thoughts\n\nBefore my bed, the moonlight shines so bright\nI wonder if it is frost upon the ground.\nI raise my head to gaze at the bright moon,\nThen lower it, and think of home.\n\nThe first line punctuation and grammar: \"Before my bed, the moonlight shines so bright / I wonder if it is frost upon the ground.\" Fine. Does \"so bright\" unsupported? 明月光 simply bright moonlight, so bright slightly. Could \"Before my bed, bright moonlight; / I wonder if it is frost upon the ground.\" Fragment but poetry. \"Bright moonlight before my bed— / I wonder if it's frost upon the ground.\" Elegant, natural. Third and fourth. \"I lift my head to gaze at the bright moon, / then lower it, thinking of home.\" Good. \"home\" can be hometown. Native land too grand. \"my home\" more precise 故乡 = old home/native place. \"thinking of my home\" acceptable. Famous translation by Xu Yuanchong etc. I'll produce only translation no explanation. Could title be \"Thoughts on a Silent Night\" but 静夜 = quiet night. \"Thoughts on a Quiet Night\" natural.\n\nI'll respond only the English translation."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 289,
+      "completion_tokens": 619,
+      "total_tokens": 908,
+      "cached_tokens": 256,
+      "completion_tokens_details": {
+        "reasoning_tokens": 559
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 15.977
+  },
+  "status": "ok"
+}

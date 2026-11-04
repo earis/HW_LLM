@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T01",
+    "title": "静夜思",
+    "author": "李白",
+    "text": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 1
+  },
+  "condition_id": "C4",
+  "condition_name": "术语约定",
+  "repeat": 1,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "696f7e4d56791453508ce8d1b38a6acfe0c5d4a3f86a9a399f13caa7cd63d9f5",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 静夜思\nAuthor: 李白\nGenre: 五言绝句\nSource:\n床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "requested_at": "2026-11-04T05:30:15Z",
+  "translation": "**Thoughts on a Quiet Night**\n\nMoonlight before my bed—  \ncould it be frost upon the ground?  \nI lift my head and gaze at the bright moon,  \nthen bow it, thinking of my faraway home.",
+  "usage": {
+    "prompt_tokens": 221,
+    "completion_tokens": 524,
+    "total_tokens": 745,
+    "completion_tokens_details": {
+      "reasoning_tokens": 462
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 16.639,
+  "response": {
+    "id": "chatcmpl-6aeac2eafc5b8fdb56f3aaa3",
+    "object": "chat.completion",
+    "created": 1793770218,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Thoughts on a Quiet Night**\n\nMoonlight before my bed—  \ncould it be frost upon the ground?  \nI lift my head and gaze at the bright moon,  \nthen bow it, thinking of my faraway home.",
+          "reasoning_content": "I need respond only English translation preserve complete content poem structure as naturally. I'll translate title? User title author genre source. Standard. Should literary English adult unfamiliar. Static famous poem \"Quiet Night Thought\" Li Bai. Lines four:\nBefore my bed, the moonlight gleams;\nI wonder if it's frost upon the ground.\nI raise my head to gaze at the bright moon,\nThen bow it, thinking of my home.\n\nPerhaps title \"Thoughts on a Quiet Night\" and four lines. User asks only English translation, could include title? Usually translation title. \"Quiet Night Thoughts\". Should have no explanation. Ensure \"床前\" ambiguity before bed. \"明月光\" bright moonlight. \"疑是地上霜\" I suspect frost on ground. \"举头望明月\" lift head gaze bright moon. \"低头思故乡\" lower head think of native village/home. Could render:\n\nThoughts on a Quiet Night\n\nBefore my bed, the moonlight shines so bright\nI wonder if it is frost upon the ground.\nI lift my head and gaze at the luminous moon,\nThen lower it, lost in thoughts of home.\n\nThis preserves 4 lines but extra. Literary.\n\nCould do:\nBefore my bed, a pool of moonlight—\nCan it be frost upon the ground?\nI lift my head and gaze at the bright moon,\nThen bow it, dreaming of my far-off home.\n\n\"dreaming\" perhaps not exactly. \"thinking of my home far away.\" Classic:\nBefore my bed the moonlight glitters\nLike frost upon the ground.\nI raise my head to watch the moon,\nThen lower it, thinking of home.\n\nTitle perhaps \"Quiet Night Thoughts\". I should preserve complete content. Author not needed? \"Return only the English translation\" so title plus poem okay. Should not include author genre. I'll decide polished:\n\"Thoughts on a Quiet Night\n\nMoonlight before my bed—\ncould it be frost upon the ground?\nI lift my head and gaze at the bright moon,\nthen bow it, thinking of my faraway home.\"\n\nDoes \"bed\" perhaps well? Standard. Four lines, title. Nice literary. \"then bow it\" head. \"my faraway home\" captures 故乡. Adult. Capitalization sentence. Respond only."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 221,
+      "completion_tokens": 524,
+      "total_tokens": 745,
+      "completion_tokens_details": {
+        "reasoning_tokens": 462
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 16.639
+  },
+  "status": "ok"
+}

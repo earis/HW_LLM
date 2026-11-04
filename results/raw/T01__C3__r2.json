@@ -1,0 +1,65 @@
+{
+  "poem": {
+    "id": "T01",
+    "title": "静夜思",
+    "author": "李白",
+    "text": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 1
+  },
+  "condition_id": "C3",
+  "condition_name": "任务标准加边界示例",
+  "repeat": 2,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "551e98d12810971f91fb3f2d51586c2a218c241b90e27a1162fcf2f02235d2d3",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 静夜思\nAuthor: 李白\nGenre: 五言绝句\nSource:\n床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "requested_at": "2026-11-04T05:29:16Z",
+  "translation": "**Quiet Night Thoughts**\n\nBefore my bed, the bright moonlight—  \nI wonder if it is frost upon the ground.  \nI raise my head to gaze at the bright moon,  \nThen lower it, thinking of home.",
+  "usage": {
+    "prompt_tokens": 289,
+    "completion_tokens": 607,
+    "total_tokens": 896,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 546
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 17.651,
+  "response": {
+    "id": "chatcmpl-6aeac2ae35e57413e139c712",
+    "object": "chat.completion",
+    "created": 1793770158,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Quiet Night Thoughts**\n\nBefore my bed, the bright moonlight—  \nI wonder if it is frost upon the ground.  \nI raise my head to gaze at the bright moon,  \nThen lower it, thinking of home.",
+          "reasoning_content": "I need respond only English translation preserving title? User gives title author genre source. Should translate poem literary English. Famous Li Bai Quiet Night Thought. Should have accurate: Before my bed, bright moonlight; I wonder if it's frost upon the ground. I raise my head to gaze at the bright moon, then lower it, thinking of home. Could include title \"Quiet Night Thoughts\" perhaps translation only. Should have no extra. Structure four lines. \"Before my bed, the bright moon glows— / I wonder if it is frost upon the ground. / I lift my head to gaze at the bright moon, / then bow it, thinking of my home.\" But 明月光 = moonlight, 明月 = bright moon. 故乡 = native land/home. \"Thoughts on a Quiet Night\" title. Could return title and four lines. Instructions \"Return only the English translation, preserving complete content and poem structure\". Usually poem translation with title acceptable. Should literary but no unsupported additions. A common translation:\nBefore my bed a pool of light—\nCan it be frost upon the ground?\nI lift my eyes to the bright moon,\nThen bow my head and dream of home.\n\"pool\" unsupported? light pool is image implied but not exact. Better:\nBefore my bed, the bright moonlight—\nI wonder if it is frost upon the ground.\nI raise my head to gaze at the bright moon,\nThen lower it, longing for my home.\n\"思\" think of/miss, longing okay. \"my native home\" natural? \"thoughts turn to home\" preserves thinking. \"I lower my head and think of home.\" Good.\n\nPerhaps title \"Quiet Night Thoughts\" and four lines. Could use em dash etc. \"Before my bed, bright moonlight gleams; / I wonder if it is frost upon the ground. / I lift my head to gaze at the bright moon, / then bow it, thinking of my far-off home.\" Far-off unsupported though context. \"home\" enough. Avoid gleams addition? Fine but moonlight = \"The moonlight before my bed / Seems like frost upon the ground. / I lift my head to gaze at the bright moon, / Then lower it, thinking of home.\" 疑是 = suspect it is, seems perhaps. Four lines. Most polished:\nBefore my bed, the bright moonlight—\nI wonder if it is frost upon the ground.\nI raise my head to gaze at the bright moon,\nThen lower it, lost in thoughts of home.\n\"lost in\" addition but poetic natural. \"thinking of home\" direct. Could title be \"Thoughts on a Quiet Night\". I'll respond only."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 289,
+      "completion_tokens": 607,
+      "total_tokens": 896,
+      "cached_tokens": 256,
+      "completion_tokens_details": {
+        "reasoning_tokens": 546
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 17.651
+  },
+  "status": "ok"
+}

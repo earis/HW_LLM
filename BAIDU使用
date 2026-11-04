@@ -1,0 +1,99 @@
+# 关于通过千帆平台调用 DeepSeek 模型的指导
+
+先说明一点：**我是 DeepSeek，由深度求索公司开发，不是百度千帆平台的原生模型**。不过千帆平台（百度智能云千帆大模型平台）作为第三方模型聚合平台，**确实接入了 DeepSeek 系列模型**，所以你可以通过千帆的 API Key 调用 DeepSeek 模型。下面是具体指导。
+
+---
+
+## 一、准备工作
+
+1. **注册/登录百度智能云**：https://console.bce.baidu.com/
+2. **开通千帆大模型平台**：进入「千帆大模型平台」控制台，完成实名认证并开通服务。
+3. **创建 API Key**：
+   - 进入「应用接入」→「创建应用」，或直接在「API Key 管理」页面创建
+   - 记录下 **API Key**（新版 v2 接口直接用它作为 Bearer Token）
+   - 老版接口还需要 **Secret Key**，二者配合换取 Access Token
+4. **确认模型 ID**：在千帆控制台的「模型广场」里找到 DeepSeek 系列模型（如 `deepseek-v3`、`deepseek-r1` 等），**以控制台显示的 model 名称为准**（不同时间接入的版本名称可能不同）。
+
+---
+
+## 二、调用方式（推荐：OpenAI 兼容接口 v2）
+
+千帆平台提供了 OpenAI 兼容的 Chat Completions 接口，用 OpenAI SDK 就能直接调用。
+
+### 接口信息
+- **Base URL**：`https://qianfan.baidubce.com/v2`
+- **Endpoint**：`/chat/completions`
+- **认证**：`Authorization: Bearer <你的 API Key>`
+
+### Python 示例（openai SDK）
+
+```bash
+pip install openai
+```
+
+```python
+import os
+from openai import OpenAI
+
+client = OpenAI(
+    api_key=os.environ["QIANFAN_API_KEY"],   # 从环境变量读取，别硬编码
+    base_url="https://qianfan.baidubce.com/v2",
+)
+
+resp = client.chat.completions.create(
+    model="deepseek-v3",   # 以千帆控制台「模型广场」显示的 ID 为准
+    messages=[
+        {"role": "system", "content": "你是一个乐于助人的助手。"},
+        {"role": "user", "content": "用一句话解释什么是大语言模型。"},
+    ],
+    temperature=0.7,
+    max_tokens=1024,
+)
+
+print(resp.choices[0].message.content)
+```
+
+### curl 示例
+
+```bash
+export QIANFAN_API_KEY="你的APIKey"
+
+curl -X POST "https://qianfan.baidubce.com/v2/chat/completions" \
+  -H "Authorization: Bearer $QIANFAN_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "deepseek-v3",
+    "messages": [
+      {"role": "user", "content": "你好，介绍一下你自己"}
+    ],
+    "temperature": 0.7
+  }'
+```
+
+---
+
+## 三、注意事项
+
+1. **模型 ID 别写错**：不同平台对 DeepSeek 的命名不统一（比如有的叫 `deepseek-chat`，有的叫 `deepseek-v3`），**一定要以千帆控制台模型广场展示的名称/ID 为准**，否则会报 `model not found`。
+2. **两种鉴权别混淆**：
+   - **v2 接口**：直接 `Bearer <API Key>`
+   - **老版接口**（`https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/...`）：需要先用 `API Key + Secret Key` 调用 OAuth 换 `access_token`，再拼到 URL 上。如果你是新项目，**优先用 v2**。
+3. **不要把 Key 写进代码/仓库**：用环境变量或密钥管理服务。泄露后立即在控制台重置。
+4. **限流与计费**：千帆按 token 计费，各个模型的价格和 QPS 上限不同；生产环境建议做重试 + 退避。
+5. **流式输出**：v2 接口同样支持 `stream=True`，用法和 OpenAI 一致。
+6. **若想直连 DeepSeek 官方**：其实也可以直接用 DeepSeek 开放平台（`https://api.deepseek.com`）的 Key 调用我，模型名是 `deepseek-chat` / `deepseek-reasoner`，无需经过千帆，价格和最新版本通常更贴近官方。选择哪条路取决于你的合规、发票、区域部署等需求。
+
+---
+
+## 四、遇到问题排查
+
+| 现象 | 常见原因 |
+|---|---|
+| `401 Unauthorized` | API Key 错误 / 未开通模型 / 用了 v2 的 Key 调老接口 |
+| `404 model not found` | model 名称与千帆控制台不一致 |
+| `429 rate limit` | 触发 QPS 或并发上限，需申请配额或加退避 |
+| 返回内容截断 | `max_tokens` 太小，或触发了上下文长度上限 |
+
+官方文档：https://cloud.baidu.com/doc/qianfan-api/index.html （接口细节以最新文档为准，平台侧模型列表和参数可能随时更新）
+
+如果你告诉我你打算用 **Python / Java / Node.js** 哪种，或者贴出你实际遇到的报错，我可以给你更精确的示例。

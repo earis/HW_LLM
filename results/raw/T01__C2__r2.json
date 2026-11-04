@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T01",
+    "title": "静夜思",
+    "author": "李白",
+    "text": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 1
+  },
+  "condition_id": "C2",
+  "condition_name": "边界示例",
+  "repeat": 2,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "536d015e911e8d1ac1d81dae40b34fb3f7b11cf2d181a8abea239534a79c44e8",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 静夜思\nAuthor: 李白\nGenre: 五言绝句\nSource:\n床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "requested_at": "2026-11-04T05:28:15Z",
+  "translation": "Quiet Night Thoughts\n\nBefore my bed, the moonlight gleams;\nI wonder if it is frost upon the ground.\nI lift my head to gaze at the bright moon,\nThen lower it, and think of home.",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 537,
+    "total_tokens": 782,
+    "completion_tokens_details": {
+      "reasoning_tokens": 478
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 18.673,
+  "response": {
+    "id": "chatcmpl-6aeac2735a59c2b6a7a2d304",
+    "object": "chat.completion",
+    "created": 1793770099,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Quiet Night Thoughts\n\nBefore my bed, the moonlight gleams;\nI wonder if it is frost upon the ground.\nI lift my head to gaze at the bright moon,\nThen lower it, and think of home.",
+          "reasoning_content": "I need respond with only English translation preserving complete content and poem structure as naturally English permits. Title 静夜思 Li Bai famous. Should literary English adult unfamiliar Chinese. Should have title likely \"Thoughts on a Quiet Night\" / \"Quiet Night Thoughts\". Four lines correspond:\nBefore my bed, the moonlight gleams;\nI wonder if it is frost upon the ground.\nI lift my head and gaze at the bright moon;\nI lower it, and think of home.\n\nMake sure \"床前\" before bed, \"明月光\" bright moonlight. \"疑是地上霜\" suspect it is frost on ground. \"举头望明月\" raise head look bright moon. \"低头思故乡\" lower head think of homeland/home village. Structure five-character quatrain not need syllabic. Could use four lines and title. Only translation, no author? User asks title author genre source. Return only English translation. I can include title and perhaps author? \"Quiet Night Thoughts\" then four lines. \"Before my bed, moonlight glimmers bright;\\nI wonder if it is frost upon the ground.\\nI lift my head to gaze at the shining moon,\\nThen bow it, thinking of my home.\" Should preserve exact no invented event. \"bright moonlight lies before my bed\" etc.\n\nLiterary English:\n**Quiet Night Thoughts**\n\nBefore my bed, the moonlight gleams;\nI wonder if it is frost upon the ground.\nI lift my head to gaze at the bright moon,\nThen lower it, and think of home.\n\nPotential \"Then lower it\" antecedent head clear. \"thinking of my native land\" vs home. 故乡 native place/home, \"home\" good. \"I think it must be frost upon the ground\" more certain than wonder. \"I wonder if\" preserves 疑. Complete.\n\nCould use \"Moonlight before my bed—\\nCould it be frost upon the ground?\\nI lift my head to gaze at the bright moon,\\nThen bow it, dreaming of home.\" \"dreaming\" adds dream. Better thinking. \"Before my bed, the bright moon shines\" changes moonlight. Use first.\n\nDo I need preserve \"bright\" both? \"moonlight gleams\" and \"bright moon\". Fine. No markdown? Title plain then blank lines. Only English translation."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 245,
+      "completion_tokens": 537,
+      "total_tokens": 782,
+      "completion_tokens_details": {
+        "reasoning_tokens": 478
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 18.673
+  },
+  "status": "ok"
+}

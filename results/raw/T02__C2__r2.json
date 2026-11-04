@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T02",
+    "title": "鹿柴",
+    "author": "王维",
+    "text": "空山不见人，但闻人语响。返景入深林，复照青苔上。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 3
+  },
+  "condition_id": "C2",
+  "condition_name": "边界示例",
+  "repeat": 2,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "536d015e911e8d1ac1d81dae40b34fb3f7b11cf2d181a8abea239534a79c44e8",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 鹿柴\nAuthor: 王维\nGenre: 五言绝句\nSource:\n空山不见人，但闻人语响。返景入深林，复照青苔上。",
+  "requested_at": "2026-11-04T05:35:59Z",
+  "translation": "**Deer Park**\n\nOn the empty mountain, no one is seen;\nonly the sound of voices carries.\nReturning sunlight enters the deep woods\nand shines once more upon the green moss.",
+  "usage": {
+    "prompt_tokens": 248,
+    "completion_tokens": 659,
+    "total_tokens": 907,
+    "completion_tokens_details": {
+      "reasoning_tokens": 606
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 23.66,
+  "response": {
+    "id": "chatcmpl-6aeac4421bfdff6d75a12146",
+    "object": "chat.completion",
+    "created": 1793770563,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Deer Park**\n\nOn the empty mountain, no one is seen;\nonly the sound of voices carries.\nReturning sunlight enters the deep woods\nand shines once more upon the green moss.",
+          "reasoning_content": "I need translate Wang Wei 鹿柴. Only English translation preserving structure. Title likely Deer Park or Deer Enclosure. Author? Return only English translation. Could include title and lines. Should literary. Source:\n空山不见人，但闻人语响。返景入深林，复照青苔上。\nStandard:\nEmpty hills, no one in sight,\nonly the sound of someone talking;\nlate sunlight enters the deep wood,\nshining over the green moss again.\nShould complete. 返景 returning sunlight/reflected rays. Common:\nEmpty mountain, no one is seen,\nOnly the sound of human voices is heard.\nReturning sunlight enters the deep forest,\nAnd shines again on the green moss.\nLiterary and avoid clunky. Title \"Deer Park\". Wang Wei's 鹿柴 zhai enclosure. Deer Fence? Standard \"Deer Enclosure\" or \"Deer Park\". Adult unfamiliar Chinese. \"Deer Park\" nice, Buddhist resonance. Structure four lines 5 syllable perhaps can produce elegant:\nIn the empty hills, no one is seen;\nonly the echo of voices.\nSlanting sunlight enters the deep woods\nand shines again on the green moss.\nShould preserve 但闻人语响 sound of speech. \"returning sunlight\" more literal. \"The empty mountain—no one in sight, / only the sound of voices. / Returning sunlight enters the deep woods / and falls again on the green moss.\" This is solid. Does \"no one in sight\" preserve 不见人 yes. \"voices\" human. Could title Deer Enclosure, literary. Return only translation. Include title? Usually title expected. \"Deer Park\" plus poem. No author? Only translation. Could put \"Deer Park\" then lines. Good. Should decide line breaks. The natural \"On the empty mountain, no one is seen; / only the sound of voices. / Returning sunlight enters the deep woods / and shines once more on the green moss.\" \"Empty mountain\" singular standard. 鹿柴 often translated \"Deer Enclosure\". This poem famed: \"Empty mountains: no one to be seen. / Yet—hear—human sounds and echoes. / Returning sunlight enters the dark woods; / Again shining on the green moss, above.\" I can offer polished:\n**Deer Park**\n\nOn the empty mountain, no one is seen;\nonly the sound of voices carries.\nReturning sunlight enters the deep woods\nand shines once more upon the green moss.\n\n\"carries\" fits 响. \"Returning sunlight\" odd but conventional. \"The low sun returns into the deep wood\" but 返景 refers sunlight slanting back. \"Late sunlight slants into the deep woods\" interprets, perhaps better literary. \"A shaft of setting sunlight enters the deep woods\" invents shaft/setting. Use \"Returning light enters the deep forest / and shines again on the green moss.\" \"light\" perhaps enough.\n\nShould have no notes. Respond."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 248,
+      "completion_tokens": 659,
+      "total_tokens": 907,
+      "completion_tokens_details": {
+        "reasoning_tokens": 606
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 23.66
+  },
+  "status": "ok"
+}

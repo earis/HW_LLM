@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T03",
+    "title": "送元二使安西",
+    "author": "王维",
+    "text": "渭城朝雨浥轻尘，客舍青青柳色新。劝君更尽一杯酒，西出阳关无故人。",
+    "split": "dev",
+    "genre": "七言绝句",
+    "difficulty": 2
+  },
+  "condition_id": "C0",
+  "condition_name": "直接翻译",
+  "repeat": 1,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "e9ae5ce428583a7a87175bb85b44a65661a008a0a522edc37fd297c38bf0cc91",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 送元二使安西\nAuthor: 王维\nGenre: 七言绝句\nSource:\n渭城朝雨浥轻尘，客舍青青柳色新。劝君更尽一杯酒，西出阳关无故人。",
+  "requested_at": "2026-11-04T05:41:57Z",
+  "translation": "",
+  "usage": {
+    "prompt_tokens": 198,
+    "completion_tokens": 1024,
+    "total_tokens": 1222,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1021
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 34.494,
+  "response": {
+    "id": "chatcmpl-6aeac5a73a17b2939bec5ab7",
+    "object": "chat.completion",
+    "created": 1793770920,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "",
+          "reasoning_content": "I need translate Chinese poem Wang Wei \"送元二使安西\" (Seeing Yuan Er off on a Mission to Anxi / A Farewell Song). I'll output only English translation preserving content structure naturally. Title? User requests poem into literary English, likely include title and author? Instructions say return only English translation preserving complete content and poem structure. Could include title and author? I need decide. Source 4 lines seven-character quatrain. Famous translation:\nA morning rain in Weicheng settles the light dust,\nBy the travelers’ inn, green willows look freshly green.\nI urge you, my friend, to empty one more cup of wine;\nWest of Yang Pass, there will be no old friends.\n\nTitle: Farewell to Yuan Er on His Mission to Anxi\nWang Wei\nAt Weicheng morning rain has dampened light dust,\nBy the guesthouse green, green willows new.\n...\nShould literary polished.\n\nShould understand original nuance: 渭城朝雨浥轻尘: morning rain at Weicheng moistens/settles light dust. 浥 = wet/dampen. 客舍青青柳色新: guesthouse green, willow colors fresh. There is textual issue \"客舍青青柳色新\" could \"The inn is green, green; the willow hues are fresh\". Some versions 客舍青青柳色新 vs 客舍青青柳色春? I stick.\n劝君更尽一杯酒: I urge you to drink yet one more cup of wine. 更尽 = finish another. 西出阳关无故人: once west beyond Yang Pass, no old friends. Could write:\nMorning rain at Weicheng dampens the light dust;\nBy the travelers’ lodge, the willows glow fresh and green.\nDrink, I beg you, one more cup of wine—\nWest of Yang Pass, you will find no old friends.\n\nTitle \"Seeing Yuan Er Off on His Mission to Anxi\". Author optional. I'll respond only English translation. Could output title italic? No extra commentary. I can include title, then four lines. Should \"Yuan Er\" perhaps Yuan the Second; readers unfamiliar. \"Farewell to Yuan Er, Bound for Anxi\" is good but \"使\" as envoy: \"Seeing Off Yuan Er on His Mission to Anxi.\" I should preserve place names with no explanatory notes. Anxi, Yang Pass. \"Weicheng\" etc. Literary.\nAt Weicheng, morning rain has laid the light dust;\nBy the inn, all is green, the willows freshly bright.\nI urge you, friend, to drain one more cup of wine—\nWest beyond Yang Pass, there will be no old friends.\n\nLine 2 客舍青青柳色新 = \"The guesthouse stands amid green; the willows wear new color\" or \"By the guesthouse, green upon green, the willows are new.\" Should have no \"all is green\" perhaps okay.\n\"At Weicheng, morning rain has damped the light dust;\" unnatural damped. \"settled\" changes wet but good. \"A morning rain at Weicheng moistens the light dust;\" exact but less nice. Famous Witter Bynner:\nA morning-rain has settled the dust in Weicheng;\nWillows are green again in the tavern dooryard....\nWait till we empty one more cup --\nWest of Yang Gate there'll be no old friends.\nCould make my own.\n\nTitle and author:\n**Farewell to Yuan Er, Envoy to Anxi**\n*Wang Wei*\n\nMorning rain at Weicheng settles the light dust;\nBy the travelers’ lodge, the willows shine fresh and green.\nI urge you, my friend, to drain one more cup of wine—\nWest beyond Yang Pass, there will be no old friends.\n\nDoes \"seeing off\" better than farewell. \"Farewell to Yuan Er on His Mission to Anxi\". The poem title often \"Seeing Yuan Er off to Anxi\" / \"A Farewell Song\". Could title \"Seeing Off Yuan Er on His Mission to Anxi\". User gives author and genre; output title and translation likely good. Instructions say only English translation, so title and author are translation of provided metadata? Could include title, no author? Many tasks from benchmark expect just poem perhaps. I should include title and four lines. No explanation.\n\nPerhaps preserve \"客舍青青\" as guesthouse green, not just willows. \"The inn is green, green; the willows’ color is new\" unnatural. I can capture \"By the green guesthouse, the willows glow anew.\" That reads well. Line 1 \"Morning rain in Weicheng dampens the light dust;\" okay. Line 2 \"By the inn, all is green; the willows are fresh and new.\" New twice? no.\n\n\"Morning rain at Weicheng has laid the light dust low;\" adds low. \"has"
+        },
+        "finish_reason": "length"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 198,
+      "completion_tokens": 1024,
+      "total_tokens": 1222,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1021
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 34.494
+  },
+  "status": "ok"
+}

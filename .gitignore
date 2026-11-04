@@ -1,0 +1,12 @@
+results/*_raw/
+results/*_scores_raw/
+results/*_translations.csv
+results/*_usage_summary.csv
+results/translations/
+results/*.jsonl
+results/*.csv
+.env
+KIMI_KEY
+BAIDU_KEY
+__pycache__/
+*.pyc

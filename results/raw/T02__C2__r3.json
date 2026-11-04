@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T02",
+    "title": "鹿柴",
+    "author": "王维",
+    "text": "空山不见人，但闻人语响。返景入深林，复照青苔上。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 3
+  },
+  "condition_id": "C2",
+  "condition_name": "边界示例",
+  "repeat": 3,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "536d015e911e8d1ac1d81dae40b34fb3f7b11cf2d181a8abea239534a79c44e8",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 鹿柴\nAuthor: 王维\nGenre: 五言绝句\nSource:\n空山不见人，但闻人语响。返景入深林，复照青苔上。",
+  "requested_at": "2026-11-04T05:36:22Z",
+  "translation": "**Deer Enclosure**  \n*Wang Wei*\n\nIn the empty mountains, no one is seen;  \nonly the echo of human speech.  \nReturning sunlight enters the deep forest  \nand shines once more upon the green moss.",
+  "usage": {
+    "prompt_tokens": 248,
+    "completion_tokens": 1000,
+    "total_tokens": 1248,
+    "completion_tokens_details": {
+      "reasoning_tokens": 938
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 32.715,
+  "response": {
+    "id": "chatcmpl-6aeac45a539b0a028cc1c98c",
+    "object": "chat.completion",
+    "created": 1793770586,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Deer Enclosure**  \n*Wang Wei*\n\nIn the empty mountains, no one is seen;  \nonly the echo of human speech.  \nReturning sunlight enters the deep forest  \nand shines once more upon the green moss.",
+          "reasoning_content": "I need translate classical Chinese poem. Only English translation preserving complete content poem structure naturally. Title Deer Enclosure perhaps Deer Park. Author perhaps include? User says translate poem title etc. I'll output English only. Should decide format likely title plus translation perhaps no author? User asks only English translation preserving structure. I can output \"Deer Enclosure\" and four lines. Should have accurate nuances.\n\n空山不见人，但闻人语响。返景入深林，复照青苔上。\n\nStandard: Empty mountains: no one to be seen,\nYet—hear human sounds and echoes.\nReturning sunlight enters deep woods,\nAnd shines again on green moss.\n\nCommon translation: \"Empty hills, no one in sight, / only the sound of someone talking; / late sunlight enters the deep wood, / shining over the green moss again.\" Should preserve \"返景\" slanting sunlight / returning sunlight (evening sunlight reflected? 返景 means reflected sunlight? \"the returning sun\" casts its rays deep into forest, shines again on green moss). I can create literary:\nDeer Enclosure\n\nIn the empty mountains, no one is seen;\nonly the sound of human voices.\nThe returning sunlight enters the deep forest\nand shines once more upon the green moss.\n\nShould poem structure 4 lines. \"only human voices echo\" captures 响. \"no one in sight\" is fine. \"But I hear the echo of human speech\" preserves. Avoid adding I? \"only the echo of human speech is heard.\" That's passive. \"Returning sunlight enters the deep woods, / and falls again on the green moss.\" \"返景\" low sunlight? Late sun? Standard Witter Bynner: \"Empty hills, no one in sight, / only the sound of someone talking; / late sunlight enters the deep wood, / shining over the green moss again.\" Burton Watson: \"Empty hills, no one in sight, / only the sound of someone talking; / late sunlight enters the deep wood, / shining over the green moss again.\" Perhaps title Deer Fence? 鹿柴 pronounced zhai, deer enclosure. Title Deer Park. I can choose \"Deer Enclosure\" accurate.\n\nOnly English translation, perhaps title + author? If author \"Wang Wei\" English. User gave title author genre. Usually expected translation only poem perhaps title optional. I'd include title and author? Instructions say return only English translation. Title is translation, author transliteration is English. Could:\n**Deer Enclosure**  \n*Wang Wei*\n\nOn the empty mountain, no one is seen;  \nonly the sound of human voices.  \nReturning sunlight enters the deep woods  \nand shines once more on the green moss.\n\nQuestion whether \"返景\" is \"returning sunlight\" and \"复照\" shines again. Good. \"sound of human voices\" includes 响. \"But only human voices echo\" more literary:\nIn the empty mountains, no one is seen;\nonly the echoes of human speech.\nThe returning sunlight enters the deep forest\nand shines once more upon the green moss.\n\nNo \"but\" perhaps only. The source says 但闻, but hear. Could be \"yet human voices can be heard.\" Preserving perception:\nIn the empty mountains, no one is seen;\nonly the sound of human voices is heard.\nThe returning sunlight enters the deep forest\nand shines once more upon the green moss.\n\nThis is faithful but stiff. \"In the empty hills, no one is in sight; / only the echo of human voices. / Returning sunlight enters the deep woods / and shines once more on the green moss.\" This is natural. Empty mountain singular? \"空山\" generic mountain. Title 鹿柴. I think polished:\nDeer Enclosure\n\nIn the empty mountains, no one is seen;\nonly the sound of human voices echoes.\nReturning sunlight enters the deep forest\nand shines once more upon the green moss.\n\n\"sound ... echoes\" slightly redundant. \"yet human voices can be heard.\" Better:\nIn the empty mountains, no one is seen;\nonly the echo of human speech.\nThe returning sunlight enters the deep forest\nand falls once more upon the green moss.\n\n\"返景\" sunlight turning back? Perhaps \"The slanting sunlight slips into the deep woods / and shines again on the green moss.\" 返景 often translated \"returning rays of the sun\", evening sun. \"The setting sun’s returning light...\" adds setting. Common accepted \"The returning sunlight enters the deep woods, / And shines again on the green moss.\" I'll settle. No need mention genre. Output only translation."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 248,
+      "completion_tokens": 1000,
+      "total_tokens": 1248,
+      "completion_tokens_details": {
+        "reasoning_tokens": 938
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 32.715
+  },
+  "status": "ok"
+}

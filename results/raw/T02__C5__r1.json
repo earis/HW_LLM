@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T02",
+    "title": "鹿柴",
+    "author": "王维",
+    "text": "空山不见人，但闻人语响。返景入深林，复照青苔上。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 3
+  },
+  "condition_id": "C5",
+  "condition_name": "关系保持",
+  "repeat": 1,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "821b9910f3ada467058aae413a43f75bb0e4a0a4c08096111596dadaad86de42",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 鹿柴\nAuthor: 王维\nGenre: 五言绝句\nSource:\n空山不见人，但闻人语响。返景入深林，复照青苔上。",
+  "requested_at": "2026-11-04T05:39:19Z",
+  "translation": "**Deer Enclosure**\n\nIn the empty hills, no one is seen;  \nonly the sound of human voices.  \nReturning sunlight enters the deep woods  \nand shines once more upon the green moss.",
+  "usage": {
+    "prompt_tokens": 241,
+    "completion_tokens": 665,
+    "total_tokens": 906,
+    "completion_tokens_details": {
+      "reasoning_tokens": 609
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 16.733,
+  "response": {
+    "id": "chatcmpl-6aeac50958c623cf5f71c935",
+    "object": "chat.completion",
+    "created": 1793770761,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Deer Enclosure**\n\nIn the empty hills, no one is seen;  \nonly the sound of human voices.  \nReturning sunlight enters the deep woods  \nand shines once more upon the green moss.",
+          "reasoning_content": "I need produce literary English translation only. Poem 鹿柴 Wang Wei. Should preserve complete content structure naturally. Classic: Empty hills, no one in sight, / only the sound of voices; / slanting sunlight enters the deep wood / and shines again upon the green moss. Should have title? Instructions: Return only English translation preserving content and poem structure. User gives Title author genre source. Usually output title and translation? Should decide. User requests translate poem into literary English. Likely include \"Deer Enclosure\" and 4 lines, perhaps not author. I should translate title maybe \"Deer Park\" (鹿柴 literally Deer Fence/Deer Enclosure, often \"Deer Park\"). Common renderings: \"Deer Enclosure\" / \"Deer Fence\". Title 鹿柴 zhài means fenced enclosure, \"Deer Park\" conventional. I can write \"Deer Enclosure\" and lines. Literary translation preserving 返景 returning sunlight, deep forest, again shining on green moss. 空山不见人 = In empty mountains no one is seen; 但闻人语响 = only voices are heard echoing. 返景 = returning rays (afternoon sunlight reflected), often \"the returning sunlight\" / \"slanting sunlight\". Should avoid adding evening if implied? \"Returning light enters the deep woods / and shines once more on the green moss.\" This is elegant, faithful. 4 lines:\nIn the empty hills, no one is seen;\nonly the sound of human voices.\nReturning light enters the deep woods\nand shines once more upon the green moss.\nTitle Deer Enclosure. Does \"响\" mean sound, echoes? \"voices sounding\" no need echo. \"But I hear the sound of voices\" adds speaker, fine but original impersonal. \"only human voices are heard.\" I should preserve 但 \"only\" not but? \"no one in sight— / only the sound of voices.\" More poetic. Structure 4 lines:\nDeer Enclosure\n\nIn the empty hills, no one is seen;\nonly the sound of human voices.\nReturning light enters the deep woods\nand falls once more upon the green moss.\n\n复照 = shines again. \"falls once more\" good. 返景 sometimes slanting rays of setting sun, \"returning sunlight\" could confuse. \"The returning sunlight enters the deep forest / and shines again upon the green moss.\" Best. \"deep woods\" natural. Use title \"Deer Park\" perhaps standard known. Only English translation. Title plus lines. Should I include Wang Wei? No, that's not translation necessary. Could include \"Deer Enclosure\". I'd choose \"Deer Park\" established and accessible adult readers. But preserve meaning \"Deer Fence\" maybe Deer Enclosure more accurate. Famous poem translations often \"Deer Park\". Chinese 鹿柴 is a place in Wang Wei's Wangchuan estate, an enclosure for raising deer. \"Deer Enclosure\" faithful. Output."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 241,
+      "completion_tokens": 665,
+      "total_tokens": 906,
+      "completion_tokens_details": {
+        "reasoning_tokens": 609
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 16.733
+  },
+  "status": "ok"
+}

@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T01",
+    "title": "静夜思",
+    "author": "李白",
+    "text": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 1
+  },
+  "condition_id": "C1",
+  "condition_name": "任务标准",
+  "repeat": 2,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "6874213486caaf74ad1da11d774bdc853cfa501c0af0f77010d14948d27134f2",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 静夜思\nAuthor: 李白\nGenre: 五言绝句\nSource:\n床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "requested_at": "2026-11-04T05:27:24Z",
+  "translation": "**Quiet Night Thoughts**  \n*Li Bai*\n\nBefore my bed, the bright moonlight—  \nI wonder if it is frost upon the ground.  \nI raise my head to gaze at the bright moon,  \nThen lower it, thinking of home.",
+  "usage": {
+    "prompt_tokens": 229,
+    "completion_tokens": 716,
+    "total_tokens": 945,
+    "completion_tokens_details": {
+      "reasoning_tokens": 650
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 22.243,
+  "response": {
+    "id": "chatcmpl-6aeac23ff4667f310b5d8d37",
+    "object": "chat.completion",
+    "created": 1793770048,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Quiet Night Thoughts**  \n*Li Bai*\n\nBefore my bed, the bright moonlight—  \nI wonder if it is frost upon the ground.  \nI raise my head to gaze at the bright moon,  \nThen lower it, thinking of home.",
+          "reasoning_content": "I need translate poem. Should have response only English translation, preserve content structure naturally. Should have title? Instructions say translate classical Chinese poetry literary English adult readers unfamiliar. Return only English translation preserving complete content and poem structure. User title author genre source. Likely include title and translation, perhaps author. Should decide. Classic Li Bai Jing Ye Si. Standard translation:\n\nQuiet Night Thoughts\nLi Bai\n\nBefore my bed, the bright moonlight—\nI wonder if it is frost upon the ground.\nI lift my head and gaze at the bright moon,\nThen lower it and think of home.\n\nShould preserve 4 lines. \"Moonlight before my bed; / Could it be frost upon the ground? / I lift my head to gaze at the bright moon, / Then bow it, longing for my home.\" Accurate \"疑是地上霜\" suspect it is frost on ground. \"举头望明月\" raise head look at bright moon. \"低头思故乡\" lower head think of homeland/native place. Literary English, not over embellishment. Could title \"Thoughts on a Quiet Night\". Many standard title \"Quiet Night Thought\". Use \"Thoughts in the Quiet Night\". Should not include genre. Could output title, author, four lines.\n\nMake sure \"before my bed\" vs \"beside my bed\" 床前 can be before. Moonlight bright. A natural version:\n\n**Quiet Night Thoughts**  \n*Li Bai*\n\nMoonlight lies bright before my bed;\nI wonder—is it frost upon the ground?\nI lift my head and gaze at the bright moon,\nThen bow it, thinking of my home.\n\nThis adds lies but supported. \"Then bow it\" ambiguous but understandable. \"I lower it again, and think of home.\" Again unsupported slightly. Could:\n\"Bright moonlight before my bed—\nI take it for frost upon the ground.\nI lift my head to gaze at the bright moon,\nThen lower it, lost in thoughts of home.\"\n\"lost in\" adds emotion but supported. I wonder if it is frost better.\n\n\"Bright moonlight shines before my bed;\nI wonder if it is frost on the ground.\nLifting my head, I gaze at the bright moon;\nLowering it, I think of my homeland.\"\n\nNative home more lyrical. \"my old home\" conveys 故乡. Adult readers. Could be:\nBefore my bed, the bright moonlight—\nI wonder if it is frost upon the ground.\nI raise my head to gaze at the bright moon,\nThen lower it, thinking of home.\n\nVery good. Title \"Thoughts on a Quiet Night\" or \"Quiet Night Thoughts\". Only translation. Include Li Bai? User provided author. Usually translation tasks response:\nQuiet Night Thoughts\nLi Bai\n\nBefore my bed...\nNo discussion. Complete content. 4 lines. \"明月\" repeated in original? first \"明月光\" and third \"明月\" preserve bright moonlight/bright moon. Good. \"疑是\" I wonder if vs suspect. Good. \"故乡\" home/native land. \"thinking of home\" good. Could use \"my childhood home\" unsupported. Use \"my far-off home\" adds far-off. Home fine.\n\nRespond."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 229,
+      "completion_tokens": 716,
+      "total_tokens": 945,
+      "completion_tokens_details": {
+        "reasoning_tokens": 650
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 22.243
+  },
+  "status": "ok"
+}

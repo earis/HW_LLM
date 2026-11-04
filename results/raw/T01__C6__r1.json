@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T01",
+    "title": "静夜思",
+    "author": "李白",
+    "text": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 1
+  },
+  "condition_id": "C6",
+  "condition_name": "完整提示",
+  "repeat": 1,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "70e756aee2ba29a9f8c73c7afd4b85eb5ca6d993f31f79d4da528dd3cdc0ed8d",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 静夜思\nAuthor: 李白\nGenre: 五言绝句\nSource:\n床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "requested_at": "2026-11-04T05:32:56Z",
+  "translation": "**Quiet Night Thoughts**\n\nBefore my bed, the bright moonlight—  \nCould it be frost upon the ground?  \nI lift my head to gaze at the bright moon,  \nThen lower it, thinking of home.",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 921,
+    "total_tokens": 1299,
+    "completion_tokens_details": {
+      "reasoning_tokens": 862
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 256
+    }
+  },
+  "elapsed_seconds": 27.913,
+  "response": {
+    "id": "chatcmpl-6aeac38aef1bd81b063e31f4",
+    "object": "chat.completion",
+    "created": 1793770378,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Quiet Night Thoughts**\n\nBefore my bed, the bright moonlight—  \nCould it be frost upon the ground?  \nI lift my head to gaze at the bright moon,  \nThen lower it, thinking of home.",
+          "reasoning_content": "I need translate famous Li Bai 静夜思. I'll return only English translation, preserve content structure, no instructions embedded. Should decide title author? User says translate poem into literary English, only English translation. Could include title? Usually output just poem, perhaps title \"Quiet Night Thoughts\" then four lines. Make sure 明月光 moonlight before bed, 疑是地上霜 I suspect frost on ground, 举头望明月 raising head gaze bright moon, 低头思故乡 lowering head think of home. Should literary English adult unfamiliar Chinese. I can produce:\n\nQuiet Night Thoughts\n\nBefore my bed, moonlight lies bright;\nI wonder if frost has fallen on the ground.\nI lift my head and gaze at the bright moon;\nI lower it and think of home.\n\nCould avoid unsupported \"fallen\" perhaps \"I take it for frost upon the ground.\" Famous:\nBefore my bed, the moonlight glows,\nI wonder if it's frost upon the ground.\nI raise my head to gaze at the bright moon,\nThen lower it, dreaming of home.\n\"Dreaming\" unsupported? thinking/longing. \"and think of home\" exact. Structure four lines. \"Before my bed, a pool of moonlight— / Could it be frost upon the ground? / I lift my head to gaze at the bright moon, / Then bow it, thinking of home.\" Pool unsupported addition. Better straightforward, elegant.\n\nTitle \"Thoughts on a Quiet Night\" or \"Quiet Night Thoughts\". Stable translation \"Quiet Night Thoughts\". Four lines:\nBefore my bed, the moon shines bright;\nI wonder if it is frost upon the ground.\nI lift my head to gaze at the bright moon,\nThen lower it, thinking of home.\n\nIssue \"the moon shines bright\" loses 光? It's moonlight, okay but \"bright moonlight lies before my bed\" unnatural? \"Moonlight lies bright before my bed;\" good. \"I wonder if it is frost upon the ground.\" Relations: speaker suspects moonlight is frost. Fine.\n\"Before my bed, the bright moonlight; / I take it for frost upon the ground. / Raising my head, I gaze at the bright moon; / Lowering it, I think of home.\" First fragment allowed poetry, but grammar natural. Could \"Bright moonlight before my bed— / I take it for frost on the ground. / I lift my head to gaze at the bright moon, / Then lower it, thinking of home.\" Accurate, elegant. \"Then\" added temporal? Implied sequence. Could use \"and\". Only translation. Include title perhaps. Author not necessary. User wants title translated? Usually include title and poem. \"Quiet Night Thoughts\" title. Return no author? Could include title only. Perhaps literary line with \"homeland\" vs home. 故乡 native home / old home. \"my home\" okay but loses native place, \"my old home\" perhaps. \"thinking of home\" conventional.\n\nCheck \"举头\" lift head, \"低头\" lower head. \"bright moon\" both. Source 明月光, 明月. Good.\n\nRespond:\nQuiet Night Thoughts\n\nMoonlight lies bright before my bed;\nI wonder if it is frost upon the ground.\nI lift my head to gaze at the bright moon,\nThen lower it, thinking of home.\n\n\"Moonlight lies bright\" perhaps weird but literary. Could use \"Before my bed, the moonlight glows;\" this adds glows not problematic. \"I wonder if it is frost upon the ground.\" Good. Rhyme optional. \"Before my bed, the bright moonlight / Seems frost upon the ground. / I lift my head to gaze at the bright moon, / Then bow it, thinking of home.\" This turns 疑是 into seems, accurate. \"bow it\" lowering head more evocative. No unsupported. This is succinct. \"Before my bed, bright moonlight— / Could it be frost upon the ground? / I lift my head and gaze at the bright moon, / Then lower it, lost in thoughts of home.\" \"lost in\" addition emotional intensity, avoid. \"and think of home.\" The \"then\" sequence okay.\n\nI think respond title + 4 lines."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 378,
+      "completion_tokens": 921,
+      "total_tokens": 1299,
+      "completion_tokens_details": {
+        "reasoning_tokens": 862
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 256
+      }
+    },
+    "_elapsed_seconds": 27.913
+  },
+  "status": "ok"
+}

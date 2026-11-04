@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T01",
+    "title": "静夜思",
+    "author": "李白",
+    "text": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 1
+  },
+  "condition_id": "C1",
+  "condition_name": "任务标准",
+  "repeat": 1,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "6874213486caaf74ad1da11d774bdc853cfa501c0af0f77010d14948d27134f2",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 静夜思\nAuthor: 李白\nGenre: 五言绝句\nSource:\n床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "requested_at": "2026-11-04T05:22:16Z",
+  "translation": "**Quiet Night Thoughts**\n\nBefore my bed, the bright moonlight—\nI wonder if it is frost upon the ground.\nI lift my head and gaze at the bright moon;\nI lower it and think of home.",
+  "usage": {
+    "prompt_tokens": 229,
+    "completion_tokens": 388,
+    "total_tokens": 617,
+    "completion_tokens_details": {
+      "reasoning_tokens": 329
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 12.636,
+  "response": {
+    "id": "chatcmpl-6aeac10a51a0a5ec2de13d7d",
+    "object": "chat.completion",
+    "created": 1793769738,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Quiet Night Thoughts**\n\nBefore my bed, the bright moonlight—\nI wonder if it is frost upon the ground.\nI lift my head and gaze at the bright moon;\nI lower it and think of home.",
+          "reasoning_content": "I need translate Li Bai Jing Ye Si. Only English translation, preserve content structure naturally. Should decide include title? User says title author genre source. Instructions: return only English translation, preserving complete content and poem structure. Likely output title \"Quiet Night Thoughts\" then four lines. Could include author? Usually translation only poem maybe title acceptable. Should be accurate: 床前明月光 before my bed bright moonlight; 疑是地上霜 I wonder if it's frost on ground; 举头望明月 I raise my head gaze at bright moon; 低头思故乡 lower it and think of home. Should literary. Famous translation by me:\nQuiet Night Thoughts\n\nBefore my bed, the bright moonlight—\nI wonder if it is frost on the ground.\nI lift my head and gaze at the bright moon;\nI lower it and think of home.\n\nCould \"bright moonlight\" vs \"moonlight so bright\". Should have no unsupported additions. \"Before my bed, moonlight gleams; / I wonder if it is frost upon the ground. / Lifting my head, I gaze at the bright moon; / Lowering it, I think of home.\" Good. Is \"home\" accurate 故乡 native land / old home / homeland. Adult unfamiliar Chinese. \"my native home\" perhaps stilted. \"I think of home\" captures. Four lines. Title \"Thoughts on a Quiet Night\" or \"Quiet Night Thoughts\". Most natural \"Quiet Night Thoughts\". Should include author? \"Li Bai\" isn't translation content? Could just poem and title. Return only English translation. Ensure no extra."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 229,
+      "completion_tokens": 388,
+      "total_tokens": 617,
+      "completion_tokens_details": {
+        "reasoning_tokens": 329
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 12.636
+  },
+  "status": "ok"
+}

@@ -1,0 +1,65 @@
+{
+  "poem": {
+    "id": "T02",
+    "title": "鹿柴",
+    "author": "王维",
+    "text": "空山不见人，但闻人语响。返景入深林，复照青苔上。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 3
+  },
+  "condition_id": "C3",
+  "condition_name": "任务标准加边界示例",
+  "repeat": 3,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "551e98d12810971f91fb3f2d51586c2a218c241b90e27a1162fcf2f02235d2d3",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 鹿柴\nAuthor: 王维\nGenre: 五言绝句\nSource:\n空山不见人，但闻人语响。返景入深林，复照青苔上。",
+  "requested_at": "2026-11-04T05:37:44Z",
+  "translation": "**Deer Enclosure**\n\nOn the empty mountain, no one is seen;  \nonly the sound of human voices.  \nReturning sunlight enters the deep woods  \nand shines once more upon the green moss.",
+  "usage": {
+    "prompt_tokens": 292,
+    "completion_tokens": 568,
+    "total_tokens": 860,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 512
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 17.225,
+  "response": {
+    "id": "chatcmpl-6aeac4aad3a3a6cb2be71dbb",
+    "object": "chat.completion",
+    "created": 1793770667,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Deer Enclosure**\n\nOn the empty mountain, no one is seen;  \nonly the sound of human voices.  \nReturning sunlight enters the deep woods  \nand shines once more upon the green moss.",
+          "reasoning_content": "I need produce only English translation, preserve complete content and structure naturally. Should decide title perhaps Deer Enclosure, poem 4 lines. Wang Wei 鹿柴. Famous translation. \"Empty mountains: no one is seen, / only the sound of human voices is heard. / Returning sunlight enters the deep forest, / shining once more on the green moss.\" Should literary. \"In the empty hills no one is seen; / only the echo of human voices is heard. / The slanting sunlight enters the deep woods / and shines again on the green moss.\" 返景 returning light, often \"returning sunlight\" refers reflected sunlight / setting sun. Should avoid echo unsupported? 响 = sound, \"voices sounding\" not necessarily echo. Title \"Deer Enclosure\" or \"Deer Park\". 鹿柴 zhài stockade, Deer Enclosure. Author no need? Only translation likely title and four lines? User says return only English translation. Could include title. Preserve poem structure. \"Deer Enclosure\" then four lines. Perhaps \"Empty mountain, no one in sight; / only the sound of human voices. / Returning light enters the deep forest, / and shines again upon the green moss.\" Accurate. \"In the empty mountains, no one is seen; / only the sound of human voices is heard.\" Redundant but natural. \"The returning sunlight slips into the deep woods\" slips unsupported perhaps okay but no. \"and falls once more on the green moss.\" 复照青苔上 = again shines on moss. \"returning light\" possibly rays of setting sun. Many translations: \"Empty hills, no one in sight, / only the sound of someone talking; / late sunlight enters the deep wood, / shining over the green moss again.\" Gary Snyder. Could use \"Empty mountain: no one is seen, / but human voices are heard. / Returning light enters the deep forest / and shines again on the green moss.\" Does \"but\" capture 但 (only) yes. \"Returning light\" can sound weird but literary. Should have no explanation. I'll formulate title plus quatrain:\n\nDeer Enclosure\n\nOn the empty mountain, no one is seen;\nonly the sound of human voices.\nReturning sunlight enters the deep woods\nand shines once more upon the green moss.\n\nThis preserves. \"on the empty mountain\" singular original. Good. Is title \"Deer Fence\" more accurate? Common Deer Enclosure. Use \"Deer Enclosure\". Return only translation."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 292,
+      "completion_tokens": 568,
+      "total_tokens": 860,
+      "cached_tokens": 256,
+      "completion_tokens_details": {
+        "reasoning_tokens": 512
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 17.225
+  },
+  "status": "ok"
+}

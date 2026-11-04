@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T01",
+    "title": "静夜思",
+    "author": "李白",
+    "text": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 1
+  },
+  "condition_id": "C5",
+  "condition_name": "关系保持",
+  "repeat": 1,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "821b9910f3ada467058aae413a43f75bb0e4a0a4c08096111596dadaad86de42",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 静夜思\nAuthor: 李白\nGenre: 五言绝句\nSource:\n床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "requested_at": "2026-11-04T05:31:23Z",
+  "translation": "**Quiet Night Thoughts**\n\nBefore my bed, the moonlight gleams so bright  \nI wonder if it is frost upon the ground.  \nI raise my head and gaze at the bright moon,  \nThen lower it, thinking of my home.",
+  "usage": {
+    "prompt_tokens": 238,
+    "completion_tokens": 796,
+    "total_tokens": 1034,
+    "completion_tokens_details": {
+      "reasoning_tokens": 732
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 24.349,
+  "response": {
+    "id": "chatcmpl-6aeac32d564fc6980d5ab61d",
+    "object": "chat.completion",
+    "created": 1793770286,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Quiet Night Thoughts**\n\nBefore my bed, the moonlight gleams so bright  \nI wonder if it is frost upon the ground.  \nI raise my head and gaze at the bright moon,  \nThen lower it, thinking of my home.",
+          "reasoning_content": "I need translate Li Bai famous poem. I'll output only English translation, preserving complete content and poem structure naturally. Should literary English adult unfamiliar Chinese. Should think title? Instructions \"Return only the English translation\" likely include title? User asks title etc. Usually output translation with title perhaps \"Quiet Night Thoughts\" and four lines. Should decide. I need translate accurately source relations: before bed bright moonlight, suspect frost on ground. Raise head gaze bright moon, lower head think of homeland. 五言绝句 four lines, maintain four lines. \"Before my bed, the moonlight glows so bright / I take it for frost upon the ground. / I lift my head and gaze at the bright moon, / Then bow it, dreaming of my native land.\" Should have no rhyme forced. Title \"Thoughts on a Quiet Night\". Literary, adult. \"Beside my bed, the moonlight shines so bright / I wonder if it's frost upon the ground. / I lift my eyes to gaze at the bright moon, / Then bow my head, thinking of home.\" But source 举头 = raise head, 低头 = lower head; preserve parallel. \"Before my bed, the bright moon casts its light; / I take it for frost spread upon the ground. / I raise my head and gaze at the bright moon, / Then lower it, and think of my far home.\" \"思故乡\" long for home / think of native land. No far explicit perhaps native land. \"I wonder if\" reflects疑. \"moonlight before my bed\" ambiguity perhaps 床前 could \"before my bed\". Standard translation: \"Before my bed a pool of light— / Can it be hoarfrost on the ground? / Looking up, I find the moon bright; / Bowing, in homesickness I'm drowned.\" Ezra? Not need.\n\nCould output:\n**Thoughts in the Still of Night**\n\nBefore my bed, the moonlight shines so bright  \nI wonder if it is frost upon the ground.  \nI lift my head and gaze at the shining moon,  \nThen bow my head and think of my native land.\n\nTitle 静夜思 = \"Thoughts on a Quiet Night\" more conventional. Only English translation. Does title included count? Fine. Could be \"Quiet Night Thoughts\" conventional. Four lines preserve. \"Before my bed\" odd but literal. \"The moonlight before my bed is so bright\" preserves. \"At my bed, the moonlight glows so bright\" no. Literary English:\n\"Moonlight spills before my bed, so bright  \nI wonder if it is frost upon the ground.  \nI lift my head to gaze at the bright moon,  \nThen bow it, lost in thoughts of home.\"\n\n\"lost in\" adds intensity perhaps acceptable but avoid. \"Then lower it, thinking of my native land.\" Parallel head. \"Before my bed, the moonlight gleams so bright / I wonder if it is frost upon the ground. / I raise my head and gaze at the bright moon, / Then lower it, thinking of my native land.\" Good. Repetition bright mirrors 明月光/明月. Native land sounds stilted but literary. \"home\" familiar. 故乡 means homeland/home town, \"home\" natural. Could \"my old home\" perhaps 故 = old. \"thinking of home\" good.\n\nTitle and author? \"Li Bai\" translated author not needed? User only wants English translation. Could output title plus poem. Perhaps title italic? Fine. No extra notes. I should not overthink. Respond only translation."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 238,
+      "completion_tokens": 796,
+      "total_tokens": 1034,
+      "completion_tokens_details": {
+        "reasoning_tokens": 732
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 24.349
+  },
+  "status": "ok"
+}

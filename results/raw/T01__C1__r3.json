@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T01",
+    "title": "静夜思",
+    "author": "李白",
+    "text": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 1
+  },
+  "condition_id": "C1",
+  "condition_name": "任务标准",
+  "repeat": 3,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "6874213486caaf74ad1da11d774bdc853cfa501c0af0f77010d14948d27134f2",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 静夜思\nAuthor: 李白\nGenre: 五言绝句\nSource:\n床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "requested_at": "2026-11-04T05:27:46Z",
+  "translation": "**Quiet Night Thoughts**  \n*Li Bai*\n\nBright moonlight shines before my bed;  \nI wonder if it is frost upon the ground.  \nI lift my head to gaze at the bright moon,  \nThen lower it, thinking of home.",
+  "usage": {
+    "prompt_tokens": 229,
+    "completion_tokens": 882,
+    "total_tokens": 1111,
+    "completion_tokens_details": {
+      "reasoning_tokens": 817
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 29.234,
+  "response": {
+    "id": "chatcmpl-6aeac256b9e48313789d13ab",
+    "object": "chat.completion",
+    "created": 1793770070,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Quiet Night Thoughts**  \n*Li Bai*\n\nBright moonlight shines before my bed;  \nI wonder if it is frost upon the ground.  \nI lift my head to gaze at the bright moon,  \nThen lower it, thinking of home.",
+          "reasoning_content": "I need produce only English translation preserving poem content structure naturally. Should decide title and author? User wants translate poem, source title etc. Usually return title perhaps \"Quiet Night Thoughts\" and four lines. Should have accurate classic Li Bai Jing Ye Si. \"Before my bed, the moonlight gleams; / I wonder if it's frost upon the ground. / I lift my head and gaze at the bright moon; / I lower it and think of home.\" Should literary English. Structure four lines. \"床前\" could \"By my bed\" rather than before. \"明月光\" bright moonlight. \"疑是地上霜\" I wonder if it's frost on ground. \"举头\" raise head. \"望明月\" gaze at bright moon. \"低头思故乡\" bow/lower head, think of native land/home. Title \"Thoughts on a Quiet Night\" or \"Quiet Night Thoughts.\" I should include title and perhaps Li Bai? Return only translation means title translation okay. No explanatory text. Should not inject unsupported \"lonely\" etc. Can preserve five? Four lines.\n\nPotential:\n**Quiet Night Thoughts**\n*Li Bai*\n\nMoonlight lies bright before my bed;\nI wonder if it is frost upon the ground.\nI lift my head to gaze at the shining moon,\nThen bow it, thinking of my home.\n\nIs \"lies\" adds sense but reasonable. \"Moonlight gleams before my bed— / could it be frost upon the ground? / I lift my head and gaze at the bright moon, / then lower it and think of home.\" This is elegant and direct. \"Could it be frost\" accurately疑是. \"home\" 故乡 can be \"my old home\" or \"my native land\". For adult unfamiliar Chinese, home is conventional. \"my hometown\" too modern but accurate. \"my distant home\" adds distant, not explicit. \"home\" enough.\n\nCould title \"Reflections on a Quiet Night\" conventional \"Quiet Night Thought\". Most common \"Quiet Night Thoughts\". Should preserve \"bright moon\" repeats, deliberate. \n\"Before my bed, the bright moon shines; / I wonder if it's frost upon the ground. / I lift my head to gaze at the bright moon, / then bow it, longing for my home.\" First line source \"明月光\" is moonlight not moon shines. Better:\n\"Before my bed, bright moonlight glows;\nI wonder if it is frost on the ground.\nI lift my head and gaze at the bright moon,\nThen lower it and think of home.\"\n\n\"Before my bed\" literal but odd English? \"By my bed\" natural. Classic translations \"Before my bed a pool of light— / Can it be frost upon the ground?\" but pool is Ezra? Add. I want literary. \n\"Moonlight streams before my bed; / I wonder if it is frost upon the ground. / I lift my head to gaze at the bright moon, / then bow it, thinking of my home.\" \"streams\" perhaps unsupported movement. \"Bright moonlight lies before my bed\" good. \"By my bed, bright moonlight gleams;\" then grammar moonlight by bed. \n\"Bright moonlight before my bed— / could it be frost upon the ground? / I lift my head to gaze at the bright moon, / then lower it, thinking of home.\" This preserves fragment first line and question second. Beautiful enough. Title and author? Since output only English translation, include title but author romanization not translation? Usually could output:\nQuiet Night Thoughts\nLi Bai\n\nBright moonlight before my bed—\nCould it be frost upon the ground?\nI lift my head to gaze at the bright moon,\nThen lower it, thinking of home.\n\nShould lowercase could after em dash? punctuation. \"Bright moonlight shines before my bed; / I wonder if it is frost on the ground.\" Full sentences. \"Bright moonlight lies before my bed;\" weird lies but poetic.\n\nNo need markdown perhaps plain. Return only."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 229,
+      "completion_tokens": 882,
+      "total_tokens": 1111,
+      "completion_tokens_details": {
+        "reasoning_tokens": 817
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 29.234
+  },
+  "status": "ok"
+}

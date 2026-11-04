@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T01",
+    "title": "静夜思",
+    "author": "李白",
+    "text": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 1
+  },
+  "condition_id": "C4",
+  "condition_name": "术语约定",
+  "repeat": 2,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "696f7e4d56791453508ce8d1b38a6acfe0c5d4a3f86a9a399f13caa7cd63d9f5",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 静夜思\nAuthor: 李白\nGenre: 五言绝句\nSource:\n床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "requested_at": "2026-11-04T05:30:32Z",
+  "translation": "**Quiet Night Thoughts**  \n*Li Bai*\n\nBefore my bed, bright moonlight gleams;  \nI wonder if it’s frost upon the ground.  \nI raise my head to gaze at the bright moon,  \nThen lower it and think of home.",
+  "usage": {
+    "prompt_tokens": 221,
+    "completion_tokens": 948,
+    "total_tokens": 1169,
+    "completion_tokens_details": {
+      "reasoning_tokens": 881
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 30.954,
+  "response": {
+    "id": "chatcmpl-6aeac2fbbe1a75314351af49",
+    "object": "chat.completion",
+    "created": 1793770236,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Quiet Night Thoughts**  \n*Li Bai*\n\nBefore my bed, bright moonlight gleams;  \nI wonder if it’s frost upon the ground.  \nI raise my head to gaze at the bright moon,  \nThen lower it and think of home.",
+          "reasoning_content": "I need produce only English translation, preserve complete content and poem structure naturally. Title perhaps Quiet Night Thought/Thoughts on a Quiet Night, author Li Bai, genre five-character quatrain? Should determine expected output likely include title/author? User asks translate this poem. Instructions say only English translation, preserving complete content and poem structure. Could include title and author translated, then four lines. Should literary English, familiar stable renderings. Classic:\nThoughts on a Quiet Night\nLi Bai\n\nBefore my bed, the moonlight gleams;\nI wonder if it's frost upon the ground.\nI raise my head to gaze at the bright moon,\nThen bow it, thinking of my home.\n\nBut original repeats 明月: bright moonlight before bed, suspect frost on ground; lift head gaze at bright moon; lower head think of old home. Should have 4 lines. Can do:\nBefore my bed, the bright moon casts its light;\nI wonder if it's frost upon the ground.\nI lift my head and gaze at the bright moon,\nThen bow it low, longing for home.\n\nLiterary but repetition natural. \"bright moonlight\" first line and \"bright moon\" third. \"Before my bed, bright moonlight lies; / I wonder if it's frost upon the ground. / I raise my head to gaze at the bright moon, / Then bow it low, dreaming of home.\" 思故乡 = think of home/native land, not dreaming. \"thinking of home.\" This is concise. Perhaps title \"Quiet Night Thoughts\" stable. Author \"Li Bai\". Genre perhaps no need translate metadata? Complete content maybe include \"A Five-Character Quatrain\"? The source title author genre given. The output should translation only, likely title + poem. I could include:\nQuiet Night Thoughts\nLi Bai\n\nBefore my bed, the bright moonlight gleams;\nI wonder if it is frost upon the ground.\nI raise my head to gaze at the bright moon,\nThen bow it low, thinking of my home.\n\nWould \"my home\" adequate 故乡 = native home, old home. \"the home I left behind\" adds. \"my native home\" sounds stilted. \"thinking of home\" natural. \"longing for home\" captures emotion but original think. \"I lower my head and think of home.\" Repetition of head explicit. Four lines:\nBefore my bed, the bright moon casts its light;\nI wonder if it's frost upon the ground.\nI raise my head and gaze at the bright moon,\nThen lower it, lost in thoughts of home.\n\"lost in\" adds but literary. Better faithful:\nBefore my bed, bright moonlight gleams;\nI wonder if it's frost upon the ground.\nI lift my head to gaze at the bright moon,\nThen bow it low and think of home.\n\nThis preserves. Is \"bright moonlight\" odd? Fine. \"Before my bed\" stable translation. Could do \"Moonlight before my bed— / I wonder if it's frost upon the ground. / I lift my head to watch the bright moon, / then bow it low, thinking of home.\" But full content.\n\nOnly translation no notes. Title and author are English, fine. Should I include genre? Could include \"(Five-Character Quatrain)\" but that isn't part of poem? Avoid.\n\nShould decide punctuation with semicolon first line maybe four lines. \"Before my bed, the bright moon shines; / I wonder if its light is frost upon the ground.\" No, first 明月光 = bright moon's light. \"Before my bed, bright moonlight gleams;\" good. Third \"the shining moon\" to avoid repeat? Recurring image stable should repeat bright moon. The famous repetition is intentional. Use \"bright moonlight\" and \"bright moon\".\n\n\"Then bow it low, longing for home.\" The action of low head = lower it. \"Then lower it and think of home.\" Could sound head object weird but idiomatic enough. \"I raise my head to gaze at the bright moon, / Then lower it and think of home.\" Best simple. Title \"Thoughts on a Quiet Night\" standard translation (静夜思 often Quiet Night Thought). \"Quiet Night Thoughts\" elegant. Author Li Bai.\n\nCould rhyme light/night etc? Not necessary. Literary natural. Four lines. Respond only."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 221,
+      "completion_tokens": 948,
+      "total_tokens": 1169,
+      "completion_tokens_details": {
+        "reasoning_tokens": 881
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 30.954
+  },
+  "status": "ok"
+}

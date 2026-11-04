@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T01",
+    "title": "静夜思",
+    "author": "李白",
+    "text": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 1
+  },
+  "condition_id": "C2",
+  "condition_name": "边界示例",
+  "repeat": 1,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "536d015e911e8d1ac1d81dae40b34fb3f7b11cf2d181a8abea239534a79c44e8",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 静夜思\nAuthor: 李白\nGenre: 五言绝句\nSource:\n床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "requested_at": "2026-11-04T05:22:28Z",
+  "translation": "**Thoughts on a Quiet Night**  \n*Li Bai*\n\nBefore my bed, the bright moon sheds its light;  \nI wonder if it is frost upon the ground.  \nI lift my head and gaze at the bright moon,  \nThen bow it, lost in thoughts of home.",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 564,
+    "total_tokens": 809,
+    "completion_tokens_details": {
+      "reasoning_tokens": 491
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 16.449,
+  "response": {
+    "id": "chatcmpl-6aeac117b2d1104b4eedbb71",
+    "object": "chat.completion",
+    "created": 1793769751,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Thoughts on a Quiet Night**  \n*Li Bai*\n\nBefore my bed, the bright moon sheds its light;  \nI wonder if it is frost upon the ground.  \nI lift my head and gaze at the bright moon,  \nThen bow it, lost in thoughts of home.",
+          "reasoning_content": "I need translate Chinese poem Jing Ye Si Li Bai. Only English translation preserve complete content and structure as naturally. I need decide include title/author? User requests translate poem, title etc. Instructions return only English translation. Could output \"Thoughts on a Quiet Night\\n\\nLi Bai\\n\\nBefore my bed...\" Standard. Should be accurate 明月光 before bed, suspect frost on ground. Raise head gaze bright moon, lower head think home. Literary. Four lines perhaps preserve quatrain. Could do:\n\nThoughts on a Quiet Night\nLi Bai\n\nBefore my bed, the bright moon sheds its light;\nI wonder if it is frost upon the ground.\nI lift my head and gaze at the bright moon,\nThen bow it, dreaming of my far-off home.\n\nShould avoid adding far-off? 故乡 homeland/native home, can be \"home\" or \"native land\". \"Then lower it, lost in thoughts of home.\" Complete. Title 静夜思 = Thoughts on a Quiet Night / Quiet Night Thoughts. Genre doesn't need translation? Could include? Probably not. Only translation. I'll ensure literary, four lines. \"Moonlight lies before my bed; / I wonder—is it frost upon the ground? / I lift my head to gaze at the bright moon, / then bow it, longing for my home.\" Original 床前明月光 could be \"Before my bed, the moonlight glows\" familiar. \"疑是地上霜\" I suspect it is frost on the ground. \"举头望明月\" Raise head gaze bright moon. \"低头思故乡\" lower head think native home. Good.\n\nCould simply:\n\nQuiet Night Thoughts\nLi Bai\n\nBefore my bed, the bright moon casts its light;\nI wonder if it is frost upon the ground.\nI lift my head and gaze at the shining moon,\nThen lower it, thinking of my faraway home.\n\nFaraway added but implicit. \"my native home\" literary but odd. \"my home\" okay. \"longing for home\" conveys 思. I should preserve exact no rhyming forced. Perhaps \"Before my bed, a pool of moonlight— / could it be frost upon the ground? / I lift my head to gaze at the bright moon, / then bow it, lost in thoughts of home.\" Pool is added image but common translation. Better avoid.\n\nReturn title + author perhaps. Only English translation no commentary."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 245,
+      "completion_tokens": 564,
+      "total_tokens": 809,
+      "completion_tokens_details": {
+        "reasoning_tokens": 491
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 16.449
+  },
+  "status": "ok"
+}

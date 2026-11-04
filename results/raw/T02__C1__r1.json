@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T02",
+    "title": "鹿柴",
+    "author": "王维",
+    "text": "空山不见人，但闻人语响。返景入深林，复照青苔上。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 3
+  },
+  "condition_id": "C1",
+  "condition_name": "任务标准",
+  "repeat": 1,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "6874213486caaf74ad1da11d774bdc853cfa501c0af0f77010d14948d27134f2",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 鹿柴\nAuthor: 王维\nGenre: 五言绝句\nSource:\n空山不见人，但闻人语响。返景入深林，复照青苔上。",
+  "requested_at": "2026-11-04T05:23:17Z",
+  "translation": "**Deer Enclosure**\n\nOn the empty mountain, no one is in sight;  \nonly the sound of voices is heard.  \nReturning sunlight enters the deep woods  \nand shines once more upon the green moss.",
+  "usage": {
+    "prompt_tokens": 232,
+    "completion_tokens": 736,
+    "total_tokens": 968,
+    "completion_tokens_details": {
+      "reasoning_tokens": 678
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 20.046,
+  "response": {
+    "id": "chatcmpl-6aeac1473ae4830524d48e1b",
+    "object": "chat.completion",
+    "created": 1793769799,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Deer Enclosure**\n\nOn the empty mountain, no one is in sight;  \nonly the sound of voices is heard.  \nReturning sunlight enters the deep woods  \nand shines once more upon the green moss.",
+          "reasoning_content": "I need respond only English translation preserving title? Should think. User gives classical Chinese poem Wang Wei Deer Enclosure (鹿柴). I'll translate literary English complete content and structure naturally. Standard translation:\nDeer Enclosure\nWang Wei\nNo one is seen in the empty mountains;\nonly the sound of voices is heard.\nReturning sunlight enters the deep woods,\nand shines again on the green moss.\n\nShould accurately interpret 返景 (returning light, slanting sunlight / reflected sunlight). 空山不见人，但闻人语响。返景入深林，复照青苔上。\nTitle often Deer Park / Deer Enclosure. Genre irrelevant. I need only English translation, likely title + author? Instructions say \"Return only the English translation, preserving complete content and poem structure\". Usually output title and four lines. Could include \"Deer Enclosure\" then poem. No explanatory notes. I should decide best wording:\nDeer Enclosure\n\nIn the empty mountains, no one is seen;\nonly the sound of human voices.\nReturning sunlight enters the deep forest,\nand shines again upon the green moss.\n\nDoes \"only the sound of human voices\" grammatically fragment but poetic. \"I hear only the echo of voices\" adds I, echo perhaps 响 means sound. \"but I hear the sound of voices\" implies speaker. Standard \"Empty hills, no one in sight, / only the sound of someone talking; / late sunlight enters the deep wood, / shining over the green moss again.\" Gary Snyder famous. Could emulate not copy? I can produce my own.\n\"No one is seen on the empty mountain;\nonly the sound of voices is heard.\nThe returning sunlight enters the deep woods\nand shines once more on the green moss.\"\n\nNatural and accurate. \"Returning sunlight\" odd in English but accepted. \"Slanting sunlight\" unsupported? 返景 = sunlight returning, often \"returning rays\" or \"reflected light\", referring setting sun. \"The low sun's returning light slips into the deep forest\" too addition. \"A shaft of returning sunlight enters the deep wood\" shaft unsupported. Better:\nDeer Enclosure\n\nOn the empty mountain, no one is in sight;\nI hear only the sound of human voices.\nReturning sunlight enters the deep forest\nand shines once more upon the green moss.\n\nDoes title translation \"Deer Enclosure\" best? 鹿柴 zhai, stockade/enclosure, yes. \"human voices\" redundant but literal 人语. \"voices\" enough. Four lines. Author not necessary. Perhaps include Wang Wei? User asks poem translation, output only translation. Include title perhaps. I'll output:\nDeer Enclosure\n\nNo one is seen on the empty mountain;\nonly the sound of voices is heard.\nReturning sunlight enters the deep woods,\nshining once more upon the green moss.\n\nCheck \"返景入深林，复照青苔上\" \"Returning sunlight enters deep forest, again shines on green moss.\" Good. \"No one is seen\" passive vs poetic. Could do \"In the empty mountains, no one is in sight; / only the sound of voices can be heard.\" 空山 singular generic. \"On the empty mountain, no one is in sight;\" okay. Title perhaps \"The Deer Enclosure\". Common \"Deer Enclosure\". Output only."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 232,
+      "completion_tokens": 736,
+      "total_tokens": 968,
+      "completion_tokens_details": {
+        "reasoning_tokens": 678
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 20.046
+  },
+  "status": "ok"
+}

@@ -1,0 +1,65 @@
+{
+  "poem": {
+    "id": "T02",
+    "title": "鹿柴",
+    "author": "王维",
+    "text": "空山不见人，但闻人语响。返景入深林，复照青苔上。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 3
+  },
+  "condition_id": "C3",
+  "condition_name": "任务标准加边界示例",
+  "repeat": 2,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "551e98d12810971f91fb3f2d51586c2a218c241b90e27a1162fcf2f02235d2d3",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 鹿柴\nAuthor: 王维\nGenre: 五言绝句\nSource:\n空山不见人，但闻人语响。返景入深林，复照青苔上。",
+  "requested_at": "2026-11-04T05:37:23Z",
+  "translation": "**Deer Enclosure**\n\nOn the empty mountain, no one is seen;\nonly the sound of voices is heard.\nReturning sunlight enters the deep woods\nand shines once more upon the green moss.",
+  "usage": {
+    "prompt_tokens": 292,
+    "completion_tokens": 633,
+    "total_tokens": 925,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 578
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 20.808,
+  "response": {
+    "id": "chatcmpl-6aeac4969b88899912d26fe7",
+    "object": "chat.completion",
+    "created": 1793770646,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Deer Enclosure**\n\nOn the empty mountain, no one is seen;\nonly the sound of voices is heard.\nReturning sunlight enters the deep woods\nand shines once more upon the green moss.",
+          "reasoning_content": "I'll respond only English translation, preserve title? User asks translate poem. Likely include title and poem? I'll return only English translation. I'll translate 鹿柴 by Wang Wei. Should be careful 返景 = returning sunlight, slanting rays at sunset. 鹿柴 often Deer Park / Deer Enclosure. Empty mountain no one seen, only hear voices. Returning light enters deep forest, shines again on green moss. I'll maintain structure four lines. Could title \"Deer Enclosure\" or \"Deer Park\". Adult readers unfamiliar Chinese. Standard translations: \"Deer Park\" Empty hills, no one in sight, / Only the sound of someone talking; / Late sunlight enters the deep wood, / Shining over the green moss again. I can choose evocative accurate. \"Deer Enclosure\" literal 柴 zhai enclosure/fence, a place name. \"Deer Park\" common title. \"Empty mountain—no one is seen, / yet I hear the echo of voices. / Returning sunlight enters the deep woods / and shines once more on the green moss.\" Should not include author? Return only English translation preserving complete content. Title likely translated. Format:\n**Deer Enclosure**\n\nOn the empty mountain, no one is seen;\nonly the sound of voices is heard.\nThe returning sunlight enters the deep forest\nand shines again upon the green moss.\n\nBut literary rather than literal. \"No one in sight on the empty mountain, / only the sound of human voices. / Returning sunlight slips into the deep woods / and falls again on the green moss.\" \"slips\" unsupported nuance but natural. 返景 means sunlight reflected? There is debate: \"returning sunlight\" i.e. setting sun rays. \"The setting sun's returning light\" too cumbersome. Standard \"A ray of the setting sun enters the deep forest, / And shines again on the green moss.\" Complete. No need overdo. Title \"Deer Enclosure\" less natural but accurate. \"Deer Park\" familiar literary English but suggests park. 鹿柴 (zhài) literally deer enclosure, Wang Wei's estate site. Use Deer Enclosure. Poem four lines:\nThe mountain is empty; no one is seen,\nonly the sound of voices is heard.\nReturning sunlight enters the deep woods\nand shines once more upon the green moss.\n\nThis is clear. Could \"Empty mountain—not a soul in sight; / only the sound of human voices. / The last light returns into the deep woods / and shines again on the green moss.\" Does last light returns awkward. \"The setting sun casts its light into the deep forest, / shining once more on the green moss.\" Loses returning image but accurate enough. Better preserve \"returning light\". \"Returning light enters the deep forest\" literary, common. I'll respond only the translation."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 292,
+      "completion_tokens": 633,
+      "total_tokens": 925,
+      "cached_tokens": 256,
+      "completion_tokens_details": {
+        "reasoning_tokens": 578
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 20.808
+  },
+  "status": "ok"
+}

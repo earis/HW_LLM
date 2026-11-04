@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T03",
+    "title": "送元二使安西",
+    "author": "王维",
+    "text": "渭城朝雨浥轻尘，客舍青青柳色新。劝君更尽一杯酒，西出阳关无故人。",
+    "split": "dev",
+    "genre": "七言绝句",
+    "difficulty": 2
+  },
+  "condition_id": "C0",
+  "condition_name": "直接翻译",
+  "repeat": 3,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "e9ae5ce428583a7a87175bb85b44a65661a008a0a522edc37fd297c38bf0cc91",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 送元二使安西\nAuthor: 王维\nGenre: 七言绝句\nSource:\n渭城朝雨浥轻尘，客舍青青柳色新。劝君更尽一杯酒，西出阳关无故人。",
+  "requested_at": "2026-11-04T05:43:05Z",
+  "translation": "**Seeing Off Yuan Er on His Mission to Anxi**  \n*Wang Wei*\n\nMorning rain at Weicheng has settled the light dust;  \nBy the travelers’ inn, the willows are fresh and green.  \nDrink, my friend, one more cup of wine—  \nWest beyond Yang Pass, there will be no old friends.",
+  "usage": {
+    "prompt_tokens": 198,
+    "completion_tokens": 901,
+    "total_tokens": 1099,
+    "completion_tokens_details": {
+      "reasoning_tokens": 815
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 29.409,
+  "response": {
+    "id": "chatcmpl-6aeac5ed9ef516b5773d7bf4",
+    "object": "chat.completion",
+    "created": 1793770989,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Seeing Off Yuan Er on His Mission to Anxi**  \n*Wang Wei*\n\nMorning rain at Weicheng has settled the light dust;  \nBy the travelers’ inn, the willows are fresh and green.  \nDrink, my friend, one more cup of wine—  \nWest beyond Yang Pass, there will be no old friends.",
+          "reasoning_content": "I need translate only English, preserve complete content and poem structure as naturally English permits. Should probably have title, author? User requests title author genre source. I'll output translation poem. Could include title Seeing Off Yuan Er on His Mission to Anxi, Wang Wei. Four lines. Should literary quality. Poem:\n渭城朝雨浥轻尘，\n客舍青青柳色新。\n劝君更尽一杯酒，\n西出阳关无故人。\n\nKnown translation: A morning rain in Weicheng settles the light dust; By the inn, green willows freshen. Drink one more cup of wine, my friend; West of Yang Pass, you'll find no old friends. Should preserve \"客舍青青柳色新\" ambiguity: guesthouse green, willow colors fresh. \"A morning rain at Weicheng dampens the light dust; / The inn is green, the willows freshly green. / I urge you, friend, to finish one more cup of wine— / West beyond Yang Pass, there will be no old friends.\" Avoid repeat green perhaps \"The roadside inn stands amid willows, fresh and green.\" Should structure 4 lines. Title \"Farewell to Yuan Er on His Mission to Anxi\" or \"Seeing Off Yuan Er, Envoy to Anxi\". Yuan Er is a person's nickname, Second Yuan. \"Sending Off Yuan Er on His Mission to Anxi\". I need only English translation. Can include title and author. Is title part of poem content? Usually translation output title + author + 4 lines. No notes.\n\nThink literary line: \nMorning rain at Weicheng dampens the light dust;\nBy the travelers’ inn, the willows glow fresh and green.\nDrink, my friend, one more cup of wine—\nWest of Yang Pass, you will find no old friends.\n\n\"更尽\" = finish another cup, \"劝君更尽一杯酒\" = I urge you to drain one more cup. \"Once west of Yang Pass, there’ll be no old friends.\" Strong. \"客舍青青柳色新\" literally inn green, willow color new. \"The inn looks green; the willows are fresh and new.\" W.B. perhaps \"By the inn, the willows are fresh and green.\" Good.\n\nShould have title and author perhaps title italic? Plain. I can return:\n**Seeing Off Yuan Er on His Mission to Anxi**  \n*Wang Wei*\n\nAt Weicheng, morning rain has laid the light dust;  \nBy the travelers’ inn, the willows are fresh and green.  \nDrink, my friend, one more cup of wine—  \nWest beyond Yang Pass, there will be no old friends.\n\nDoes \"has laid\" light dust = settled, while 浥 means moistened. \"dampens the light dust\" precise but less poetic. \"A morning rain at Weicheng wets the light dust;\" awkward. \"Morning rain at Weicheng has settled the light dust;\" good. \"客舍青青\" could mean inn appears green due willow. \"The inn is fresh with green, the willows newly green\" redundant. Common translations:\n\"A morning rain in Weicheng has dampened the light dust,\nThe inn is green with the fresh color of willows.\nI urge you to drink up another cup of wine,\nWest of the Yang Pass, there will be no old friends.\"\nMy version natural.\n\nShould have no explanation. Ensure \"Anxi\" not \"the Western Regions\". Title likely \"Seeing Off Yuan Er on His Mission to Anxi\". Fine.\n\nCould use \"Weicheng’s morning rain has laid the light dust low\" but low adds. \"Morning rain at Weicheng dampens the flying dust\" 轻尘 not flying exactly. \"By the inn, the willows stand fresh and green\" complete enough. \"Drink one more cup, my friend, before you go\" adds before go. Better no add.\n\nRespond only."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 198,
+      "completion_tokens": 901,
+      "total_tokens": 1099,
+      "completion_tokens_details": {
+        "reasoning_tokens": 815
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 29.409
+  },
+  "status": "ok"
+}

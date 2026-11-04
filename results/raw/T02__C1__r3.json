@@ -1,0 +1,61 @@
+{
+  "poem": {
+    "id": "T02",
+    "title": "鹿柴",
+    "author": "王维",
+    "text": "空山不见人，但闻人语响。返景入深林，复照青苔上。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 3
+  },
+  "condition_id": "C1",
+  "condition_name": "任务标准",
+  "repeat": 3,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "6874213486caaf74ad1da11d774bdc853cfa501c0af0f77010d14948d27134f2",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 鹿柴\nAuthor: 王维\nGenre: 五言绝句\nSource:\n空山不见人，但闻人语响。返景入深林，复照青苔上。",
+  "requested_at": "2026-11-04T05:35:29Z",
+  "translation": "**Deer Enclosure**\n\nIn the empty hills, no one is seen;  \nonly the sound of human voices.  \nReturning sunlight enters the deep woods  \nand shines once more upon the green moss.",
+  "usage": {
+    "prompt_tokens": 232,
+    "completion_tokens": 960,
+    "total_tokens": 1192,
+    "completion_tokens_details": {
+      "reasoning_tokens": 904
+    },
+    "prompt_tokens_details": {
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 29.604,
+  "response": {
+    "id": "chatcmpl-6aeac425c680071db5eea2d9",
+    "object": "chat.completion",
+    "created": 1793770533,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Deer Enclosure**\n\nIn the empty hills, no one is seen;  \nonly the sound of human voices.  \nReturning sunlight enters the deep woods  \nand shines once more upon the green moss.",
+          "reasoning_content": "I need translate classical poem 鹿柴 王维. Only English translation preserving complete content poem structure naturally. Should have title? User asks translate poem title author genre source. Instructions say return only English translation. Could include title and poem? Usually translations of poem tasks output title perhaps not? Should decide. \"Return only the English translation, preserving complete content and poem structure\". Likely title Deer Enclosure / Deer Park. Should translate four lines:\n\n空山不见人，\n但闻人语响。\n返景入深林，\n复照青苔上。\n\nStandard:\nEmpty mountains, no one to be seen,\nYet the sound of human voices is heard.\nReturning sunlight enters the deep forest,\nAnd shines again upon the green moss.\n\nLiterary:\nIn the empty hills, no one is seen;\nOnly the sound of voices echoes.\nSlanting sunlight enters the deep woods,\nAnd shines once more on the green moss.\n\n返景: returning sunlight, reflected sunlight, rays of setting sun returning. Many translations:\nDeer Park\nEmpty hills, no one in sight,\nonly the sound of someone talking;\nlate sunlight enters the deep wood,\nshining over the green moss again.\n(Gary Snyder)\n\"Empty mountains: no one is seen,\nBut the sound of human voices is heard.\nReturning sunlight enters the deep forest,\nAnd shines again on the green moss.\"\nShould preserve title 鹿柴 \"Deer Enclosure\" (zhai fence stockade). \"Deer Park\" common but can mislead. Literary translation:\nDeer Enclosure\n\nNo one is seen in the empty mountains;\nonly the echo of human voices.\nThe returning light enters the deep forest\nand shines once more upon the green moss.\n\nDoes \"echo\" add? 人语响 sound of speech resounding. \"only human voices sounding\" good.\n\"Empty mountains\" plural vs 空山 singular generic. \"In the empty hills, no one is seen, / yet the sound of voices carries. / Returning sunlight enters the deep woods / and shines again on the green moss.\"\nShould not have \"yet\" perhaps 但 only. \"no one is seen\" complete. \"returning light\" obscure. \"The slanting light of sunset\" adds setting but implied 返景. Better \"Returning sunlight\" though unnatural. \"Late sunlight\" is interpretation. \"The sun's returning rays enter the deep forest, / and shine once more on the green moss.\" Good.\n\nShould title only? Return English translation including title likely okay. \"Deer Enclosure\" then four lines. No author. User asks poem translation. Only translation means title can be translated. Could output title plus poem. Many such tasks expected title and body perhaps. I'll think system: generic, instructions specific. No instructions embedded. I need concise. I can choose polished:\nDeer Enclosure\n\nIn the empty hills, no one is seen;\nonly the sound of human voices.\nReturning sunlight enters the deep woods\nand shines once more upon the green moss.\n\nLine 2 fragment matching original. \"only the sound...\" literary. \"Returning sunlight\" strange but recognized. \"The light turns back into the deep woods\" could be accurate to 返景入深林: reflected rays enter forest. \"The slanting sunlight enters the deep forest\" and again shines moss. But \"returning light\" may be best literal. Use \"Sunlight, turning back, enters the deep woods,\"? 返景 is \"reflected sunlight\" or setting sun. I'll analyze precise classical. 鹿柴: 空山不见人，但闻人语响。返景入深林，复照青苔上。 Translation: In empty mountains no one is seen, but hear sound of human speech; returning sunlight enters deep forest, again shines upon green moss. \"返景\" yǐng? 返照的光，即夕阳西下时反射的阳光. The last light slants back into woods. Literary \"Low sunlight slants into the deep woods / and falls again on the green moss.\" This captures visual, not unsupported? Low implies sunset, accepted. \"Returning sunlight\" closer but a little translated.\n\nTitle \"Deer Fence\" weird. Deer Enclosure correct. Could \"Deer Park\" literary and familiar. 鹿柴 (zhài) a fenced deer park, one of Wang Wei's Wangchuan estate sites. \"Deer Enclosure\" exact.\n\nOnly English translation no notes. Do that."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 232,
+      "completion_tokens": 960,
+      "total_tokens": 1192,
+      "completion_tokens_details": {
+        "reasoning_tokens": 904
+      },
+      "prompt_tokens_details": {
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 29.604
+  },
+  "status": "ok"
+}

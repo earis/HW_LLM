@@ -1,0 +1,19 @@
+Kimi API 使用说明
+
+不要把 API Key 保存到此文件、代码、报告、日志或 Git 仓库。
+工作区中曾出现的旧 Key 已经暴露，应在 Kimi 控制台撤销并重新生成。
+
+在 PowerShell 当前窗口设置新 Key：
+
+$env:MOONSHOT_API_KEY = "你的新 Key"
+
+可选模型配置：
+
+$env:MOONSHOT_MODEL = "kimi-k3.1-pro"
+
+然后运行：
+
+python .\src\run_experiment.py --smoke
+
+官方文档：
+https://platform.kimi.com/docs/api/overview

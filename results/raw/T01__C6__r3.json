@@ -1,0 +1,65 @@
+{
+  "poem": {
+    "id": "T01",
+    "title": "静夜思",
+    "author": "李白",
+    "text": "床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+    "split": "dev",
+    "genre": "五言绝句",
+    "difficulty": 1
+  },
+  "condition_id": "C6",
+  "condition_name": "完整提示",
+  "repeat": 3,
+  "model": "kimi-k3.1-pro",
+  "system_sha256": "70e756aee2ba29a9f8c73c7afd4b85eb5ca6d993f31f79d4da528dd3cdc0ed8d",
+  "user_prompt": "Translate this poem into literary English.\nTitle: 静夜思\nAuthor: 李白\nGenre: 五言绝句\nSource:\n床前明月光，疑是地上霜。举头望明月，低头思故乡。",
+  "requested_at": "2026-11-04T05:33:51Z",
+  "translation": "**Thoughts on a Quiet Night**\n\nBright moonlight before my bed—\nI wonder if it is frost upon the ground.\nI lift my head to gaze at the bright moon,\nthen lower it, thinking of home.",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 528,
+    "total_tokens": 906,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 468
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": 0
+    }
+  },
+  "elapsed_seconds": 15.697,
+  "response": {
+    "id": "chatcmpl-6aeac3c1a4ef3333582745ba",
+    "object": "chat.completion",
+    "created": 1793770434,
+    "model": "kimi-k3.1-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**Thoughts on a Quiet Night**\n\nBright moonlight before my bed—\nI wonder if it is frost upon the ground.\nI lift my head to gaze at the bright moon,\nthen lower it, thinking of home.",
+          "reasoning_content": "I need produce only English translation preserving complete content and poem structure naturally. Poem famous Li Bai Jing Ye Si. Should decide title? User says translate this poem, source title author etc. Instructions say return only English translation. Usually output title + four lines? Could include \"Quiet Night Thoughts\" and lines. Should have no extra explanation. Translate: Before my bed, bright moonlight, / I wonder if it is frost on the ground. / I lift my head and gaze at the bright moon; / I lower my head and think of home. Literary English. Preserve 明月光 and 明月. \"Before my bed, the bright moon glows; / I wonder if frost lies on the ground. / I lift my head to gaze at the bright moon, / then lower it, thinking of home.\" Should complete: bright moonlight not moon glows? Standard: \"Before my bed, the moonlight glimmers; / I wonder if it is frost upon the ground. / I raise my head to gaze at the bright moon; / I lower it, longing for home.\" 思故乡 = think of my old home/home village, not necessarily longing? \"thinking of home\" is apt. Title \"Thoughts on a Quiet Night\". Common \"Quiet Night Thought\". Should preserve 4 lines. Perhaps title and author not necessary? Return only translation could include title. Better:\n\n**Thoughts on a Quiet Night**\n\nBefore my bed, bright moonlight;\nI wonder if it is frost on the ground.\nI lift my head to gaze at the bright moon,\nthen lower it, thinking of home.\n\n\"Before my bed, bright moonlight\" fragment okay poetic. Could be \"Bright moonlight before my bed—\" sounds natural. \"I wonder if it is frost upon the ground.\" Lifting and lowering. Use \"my native home\" for 故乡, sounds literary but unnatural. \"the home I left behind\" adds left behind though implied. \"my old home\" good. \"thinking of home\" common and natural. Should have no author translation? Li Bai remains same, no need. Could title and 4 lines. I need only English translation. Title English. Perhaps \"A Quiet Night's Thoughts\" etc. Best \"Thoughts on a Quiet Night\". I'll respond concise."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 378,
+      "completion_tokens": 528,
+      "total_tokens": 906,
+      "cached_tokens": 256,
+      "completion_tokens_details": {
+        "reasoning_tokens": 468
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "cache_write_tokens": 0
+      }
+    },
+    "_elapsed_seconds": 15.697
+  },
+  "status": "ok"
+}
