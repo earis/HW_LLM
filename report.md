@@ -8,6 +8,8 @@
 
 本阶段已经完成了可靠的生成、成本记录和逐份模型辅助评分。评分结果显示，任务标准和术语约定的平均分最高；但评分者与生成者使用同一模型，因此结果应视为辅助证据，不能替代人工专家评阅，也不能据此宣称差异具有统计显著性。
 
+git: [github.com/earis/HW_LLM/tree/hw-4](https://github.com/earis/HW_LLM/tree/hw-4)
+
 ## 1. 实验目的
 
 题目要求对同一批语言材料比较：
@@ -202,6 +204,9 @@ C6 相对 C0：
 - [src/kimi_client.py](./src/kimi_client.py)：保留的 Kimi 客户端；
 - [src/run_experiment.py](./src/run_experiment.py)：实验运行入口；
 - [src/analyze_results.py](./src/analyze_results.py)：结果汇总；
+
+
+
 - [results/baidu_raw/](./results/baidu_raw/)：本地原始输出；
 - [results/baidu_usage_summary.csv](./results/baidu_usage_summary.csv)：token 和耗时统计。
 - [results/baidu_scores_summary.csv](./results/baidu_scores_summary.csv)：七维模型辅助评分汇总。
