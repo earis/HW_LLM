@@ -1,0 +1,14 @@
+﻿{
+    "train_sentences":  81197,
+    "validation_sentences":  21421,
+    "test_sentences":  21143,
+    "train_sentence_blocks":  81197,
+    "train_mlm_blocks":  9593,
+    "validation_blocks":  21421,
+    "test_blocks":  21143,
+    "train_sections":  12,
+    "validation_sections":  12,
+    "test_sections":  12,
+    "vocab_size":  8192,
+    "max_length":  512
+}
