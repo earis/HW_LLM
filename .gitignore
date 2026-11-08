@@ -10,9 +10,4 @@ env/
 .idea/
 .vscode/
 
-
-.report`copy.md/
-.report_draft.md/
-.report_part2.md/
-.hw7_requirement_no_submit.jpg/
-.ignore/
+.ignore/*.md
