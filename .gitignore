@@ -1,0 +1,18 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local environments and editor files
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+
+
+.report`copy.md/
+.report_draft.md/
+.report_part2.md/
+.hw7_requirement_no_submit.jpg/
+.ignore/
