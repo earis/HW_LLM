@@ -10,4 +10,4 @@ env/
 .idea/
 .vscode/
 
-.ignore/*.md
+ignore/
